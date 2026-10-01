@@ -7,7 +7,9 @@ set -u
 cd "$(dirname "$0")" || exit 1
 PY=/opt/homebrew/bin/python3
 if git rev-parse --is-inside-work-tree >/dev/null 2>&1 && git remote get-url origin >/dev/null 2>&1; then
-  git fetch -q origin main && git reset -q --hard origin/main || echo "[$(date '+%F %T')] fetch failed, notifying from local state"
+  # Fast-forward to the cloud's latest commit. Never discards local commits that
+  # have not been pushed yet; if the branches have diverged, leave it for a human.
+  git pull -q --rebase origin main || { git rebase --abort 2>/dev/null; echo "[$(date '+%F %T')] pull failed, notifying from local state"; }
 else
   $PY check_schedules.py
   $PY build_site.py
