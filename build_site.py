@@ -9,6 +9,7 @@ import html
 import json
 import re
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent
@@ -219,7 +220,7 @@ def change_log_html():
 def main():
     SITE_DIR.mkdir(exist_ok=True)
     story = STORY.read_text() if STORY.exists() else ""
-    built = datetime.now().strftime("%Y-%m-%d %H:%M")
+    built = datetime.now(ZoneInfo("America/Chicago")).strftime("%Y-%m-%d %H:%M")  # same clock on the Mac and on GitHub runners
     page = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Chicago and North Central Kerfuffle</title>
