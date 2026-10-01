@@ -154,10 +154,10 @@ def manual_cards():
     for src in json.loads(MANUAL.read_text()):
         cards.append(
             f'<div class="card"><header style="background:var(--ncaa)">'
-            f'<div><div class="who">{esc(src["name"])}</div><div class="what">Checked by hand</div></div></header>'
+            f'<div><div class="who">{esc(src["name"])}</div><div class="what">Official scoreboard</div></div></header>'
             f'<div class="body"><p class="status" style="color:var(--ncaa)">{esc(src["status"])}</p>'
             f'<p style="margin:0 0 .5em">{esc(src["detail"])}</p>'
-            f'<p class="meta">Checked {esc(src["checked"])} &middot; <a href="{esc(src["url"])}">scoreboard</a><br>{esc(src["how"])}</p>'
+            f'<p class="meta">Checked {esc(src["checked"])} &middot; <a href="{esc(src["url"])}">scoreboard</a></p>'
             f'</div></div>')
     return "\n".join(cards)
 
@@ -225,11 +225,11 @@ def main():
     page = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Chicago and North Central Kerfuffle</title>
-<meta name="description" content="How UChicago, North Central (IL), and the NCAA list the September 30, 2026 women's soccer game that was not played, checked every hour.">
+<meta name="description" content="How UChicago, North Central (IL), and the NCAA list the September 30, 2026 women's soccer game that was not played, updated hourly.">
 <link rel="icon" href="assets/uchicago.png">
 <style>{CSS}</style></head><body><main>
 <h1>The Chicago and North Central Kerfuffle</h1>
-<p class="sub">The September 30, 2026 women's soccer game between UChicago and North Central (IL) was not played. UChicago lists it as a forfeit. North Central lists it as postponed. The NCAA lists it as canceled. This page reads both schools' schedule pages every hour and records every change.</p>
+<p class="sub">The September 30, 2026 women's soccer game between UChicago and North Central (IL) was not played. UChicago lists it as a forfeit. North Central lists it as postponed. The NCAA lists it as canceled. This page tracks both schools' schedule listings and records every change, updated hourly.</p>
 <h2 id="now">Current listings</h2>
 <div class="cards">
 {chr(10).join(school_card(s) for s in SCHOOLS)}
@@ -237,7 +237,7 @@ def main():
 </div>
 {story}
 <h2 id="changes">Change log</h2>
-<p class="small">Every change the hourly check has seen on either schedule page, newest first.</p>
+<p class="small">Every change to either schedule listing, newest first.</p>
 {change_log_html()}
 <section class="more">
 <h2 id="more">More Division III numbers</h2>
