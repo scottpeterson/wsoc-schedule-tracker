@@ -41,7 +41,8 @@ table{border-collapse:collapse;width:100%;margin:.6em 0 1.2em;font-size:.95rem}
 th,td{border-bottom:1px solid var(--line);padding:7px 10px;text-align:center;vertical-align:top}th:first-child,td:first-child{text-align:left}
 ul{padding-left:1.2em}li{margin:.35em 0}.timeline li{margin:.7em 0}.timeline time{font-weight:600}
 .event{margin:1.2em 0}.event h3{margin:0 0 .3em;font-size:1rem}.small{color:var(--muted);font-size:.9rem}
-footer{margin-top:3em;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:1em}
+.more{margin-top:3em;padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:var(--card)}.more h2{margin:0 0 .4em;border:0;padding:0;font-size:1.15rem}.more p{margin:0}
+footer{margin-top:2em;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:1em}
 """
 
 CITY_RE = re.compile(r"^[A-Z][A-Za-z.' -]+, ([A-Z][a-z]{1,4}\.?|[A-Z]{2})$")
@@ -236,6 +237,10 @@ def main():
 <h2 id="changes">Change log</h2>
 <p class="small">Every change the hourly check has seen on either schedule page, newest first.</p>
 {change_log_html()}
+<section class="more">
+<h2 id="more">More Division III numbers</h2>
+<p>This page is a side project of <a href="https://thed3statlab.com/">The D3 Stat Lab</a>, independent Division III women's basketball analytics: NPI rankings, season simulations with tournament odds, composite ratings, and conference rankings, updated through the season. If the NPI angle in this story interests you, that is where the metric is explained and tracked.</p>
+</section>
 <footer>Built {esc(built)} Central. Not affiliated with either school, the CCIW, the UAA, or the NCAA. Schedule data comes from the schools' public schedule pages. Quotes come from the linked public posts. Logos belong to their schools.</footer>
 </main></body></html>
 """
