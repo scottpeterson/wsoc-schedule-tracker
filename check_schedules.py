@@ -27,6 +27,15 @@ import urllib.error
 import urllib.request
 from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
+
+CENTRAL = ZoneInfo("America/Chicago")
+
+
+def now():
+    """Central time on the Mac and on GitHub runners, so every stamp matches the site."""
+    return datetime.now(CENTRAL)
+
 
 BASE = Path(__file__).resolve().parent
 SCHOOLS_FILE = BASE / "schools.json"
@@ -54,7 +63,7 @@ NOISE_RE = re.compile("|".join(NOISE_PATTERNS), re.IGNORECASE)
 
 
 def log(message):
-    stamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    stamp = now().strftime("%Y-%m-%d %H:%M:%S")
     print(f"[{stamp}] {message}", flush=True)
 
 
@@ -161,7 +170,7 @@ def snapshot_for(school):
     if not schedule_lines:
         raise RuntimeError(f"parsed zero schedule lines from {school['text_url']}")
     return {
-        "fetched_at": datetime.now().isoformat(timespec="seconds"),
+        "fetched_at": now().isoformat(timespec="seconds"),
         "record": record,
         "text_schedule": schedule_lines,
         "games": [{"key": key, "row": row, "full": full} for key, row, full in games],
@@ -223,7 +232,7 @@ def structured_changes(old, new):
 
 
 def append_events(slug, name, events):
-    stamp = datetime.now().isoformat(timespec="seconds")
+    stamp = now().isoformat(timespec="seconds")
     with CHANGES_JSONL.open("a") as handle:
         for event in events:
             handle.write(json.dumps({"time": stamp, "slug": slug, "school": name, **event}) + "\n")
@@ -252,7 +261,7 @@ def save_state(state):
 def main():
     schools = json.loads(SCHOOLS_FILE.read_text())
     state = load_state()
-    stamp = datetime.now().strftime("%Y-%m-%d %H:%M")
+    stamp = now().strftime("%Y-%m-%d %H:%M")
     report_sections = []
     any_change = False
 
@@ -291,7 +300,7 @@ def main():
         any_change = True
         log(f"{name}: {len(changes)} change lines")
         HIST_DIR.mkdir(exist_ok=True)
-        archive = HIST_DIR / f"{slug}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+        archive = HIST_DIR / f"{slug}_{now().strftime('%Y%m%d_%H%M%S')}.json"
         archive.write_text(json.dumps(old, indent=2))
         snap_path.write_text(json.dumps(new, indent=2))
         append_events(slug, name, structured_changes(old, new))

@@ -139,7 +139,7 @@ def school_card(school):
     fields = structure_row(game["row"]) if game else {}
     status = fields.get("Status") or ("Listed, no status shown" if game else "Game not listed")
     overall = re.sub(r"\s+", " ", next((r for r in snap["record"] if r.startswith("Overall")), ""))
-    checked = snap["fetched_at"].replace("T", " ")
+    checked = datetime.fromisoformat(snap["fetched_at"]).strftime("%Y-%m-%d %H:%M") + " Central"
     return (f'<div class="card">{head}<div class="body">'
             f'<p class="status" style="color:var(--c-{school["slug"]})">{esc(status)}</p>'
             f'{fields_html(fields)}'
@@ -193,7 +193,7 @@ def change_log_html():
         return "<p>No checks recorded yet.</p>"
     blocks = []
     for event in reversed(events):
-        when = event["time"].replace("T", " ")
+        when = datetime.fromisoformat(event["time"]).strftime("%Y-%m-%d %H:%M") + " Central"
         school = event["school"]
         kind = event["type"]
         if kind == "baseline":
