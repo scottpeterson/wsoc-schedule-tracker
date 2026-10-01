@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "north_central",
+    "name": "North Central (IL)",
+    "schedule_url": "https://northcentralcardinals.com/sports/womens-soccer/schedule",
+    "text_url": "https://northcentralcardinals.com/services/schedule_txt.ashx?schedule=782",
+    "color": "#c30202",
+    "text": "#ffffff",
+    "logo": "assets/north_central.svg",
+    "mascot": "Cardinals",
+    "short": "North Central",
+    "color_dark": "#ff7a7a"
+  },
+  {
+    "slug": "uchicago",
+    "name": "UChicago",
+    "schedule_url": "https://athletics.uchicago.edu/sports/womens-soccer/schedule",
+    "text_url": "https://athletics.uchicago.edu/services/schedule_txt.ashx?schedule=586",
+    "color": "#880000",
+    "text": "#ffffff",
+    "logo": "assets/uchicago.png",
+    "mascot": "Maroons",
+    "short": "UChicago",
+    "color_dark": "#f29b9b"
+  }
+]

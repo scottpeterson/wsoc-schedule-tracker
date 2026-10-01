@@ -1,0 +1,6 @@
+logs/
+history/
+state.json
+.notified_through
+__pycache__/
+.DS_Store

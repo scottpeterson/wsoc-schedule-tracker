@@ -1,0 +1,117 @@
+{
+  "fetched_at": "2026-10-01T10:31:43",
+  "record": [
+    "Overall    7-1  .875",
+    "Conference 0-0  .000",
+    "Streak     W1",
+    "Home       4-0",
+    "Away       3-1",
+    "Neutral    0-0"
+  ],
+  "text_schedule": [
+    "Sep 1 (Tue)    4 PM CT      Home   Kalamazoo              Chicago, IL | Stagg Field                                                  W 4-1",
+    "Sep 4 (Fri)    4 PM CT      Home   Macalester             Chicago, IL | Stagg Grass Field                                            W 4-1",
+    "Sep 9 (Wed)    4 PM CT      Home   North Park             Chicago, IL | Stagg Grass Field                                            W 3-0",
+    "Sep 11 (Fri)   4:30 PM PT   Away   Pomona-Pitzer          Claremont, CA | Pomona-Pitzer Soccer Stadium                               W 1-0",
+    "Sep 13 (Sun)   11 AM PT     Away   Redlands               Redlands, CA | Farquhar Field                                              W 5-0",
+    "Sep 19 (Sat)   2 PM CT      Away   Wheaton (IL)           Wheaton, IL | Joe Bean Stadium                                             W 3-0",
+    "Sep 23 (Wed)   7 PM ET      Away   Calvin                 Grand Rapids, MI | Calvin Soccer Stadium                                   L 0-1",
+    "Sep 26 (Sat)   1 PM CT      Home   Hope                   Chicago, IL | Stagg Grass Field                                            W 2-0",
+    "Sep 30 (Wed)   4 PM CT      Home   North Central (IL)     Chicago, IL | Stagg Grass Field",
+    "Oct 3 (Sat)    8:30 PM ET   Away   New York University    Newark, NJ | Lubetkin Field at Malcolm Simon Stadium (NJIT)",
+    "Oct 10 (Sat)   1:30 PM CT   Home   Carnegie Mellon        Chicago, IL | Stagg Grass Fields",
+    "Oct 17 (Sat)   1:30 PM ET   Away   Case Western Reserve   Cleveland, OH | DiSanto Field",
+    "Oct 23 (Fri)   3 PM CT      Home   Emory                  Chicago, IL | Stagg Grass Fields",
+    "Oct 25 (Sun)   1:30 PM CT   Home   Rochester              Chicago, IL | Stagg Grass Fields",
+    "Oct 29 (Thu)   6 PM CT      Away   Illinois Tech          Chicago, IL |  Stuart Field",
+    "Oct 31 (Sat)   1:30 PM ET   Away   Brandeis               Waltham, MA |  Gordon Field",
+    "Nov 7 (Sat)    1:30 PM CT   Home   WashU                  Chicago, IL | Stagg Grass Fields"
+  ],
+  "games": [
+    {
+      "key": "Sep 1 (Tue) | Kalamazoo",
+      "row": "Sep 1 (Tue) | 4 PM CT | vs | Kalamazoo | Chicago, IL | Stagg Field | W, | 4-1",
+      "full": "Sep 1 (Tue) | 4 PM CT | vs | Kalamazoo | Box Score | Recap | Game Notes | Photos | Chicago, IL | Stagg Field | W, | 4-1 | Box Score | Recap | Game Notes | Photos | History | Hide/Show Additional Information For Kalamazoo - September 1, 2026"
+    },
+    {
+      "key": "Sep 4 (Fri) | Macalester",
+      "row": "Sep 4 (Fri) | 4 PM CT | vs | Macalester | Chicago, IL | Stagg Grass Field | W, | 4-1",
+      "full": "Sep 4 (Fri) | 4 PM CT | vs | Macalester | Box Score | Recap | Game Notes | Photos | Chicago, IL | Stagg Grass Field | W, | 4-1 | Box Score | Recap | Game Notes | Photos | History | Hide/Show Additional Information For Macalester - September 4, 2026"
+    },
+    {
+      "key": "Sep 9 (Wed) | North Park",
+      "row": "Sep 9 (Wed) | 4 PM CT | vs | North Park | Chicago, IL | Stagg Grass Field | W, | 3-0",
+      "full": "Sep 9 (Wed) | 4 PM CT | vs | North Park | Box Score | Recap | Game Notes | Photos | Chicago, IL | Stagg Grass Field | W, | 3-0 | Box Score | Recap | Game Notes | Photos | History | Hide/Show Additional Information For North Park - September 9, 2026"
+    },
+    {
+      "key": "Sep 11 (Fri) | Pomona-Pitzer",
+      "row": "Sep 11 (Fri) | 4:30 PM PT | at | #6 | Pomona-Pitzer | Claremont, CA | Pomona-Pitzer Soccer Stadium | W, | 1-0",
+      "full": "Sep 11 (Fri) | 4:30 PM PT | at | #6 | Pomona-Pitzer | Box Score | Recap | Game Notes | Photos | Claremont, CA | Pomona-Pitzer Soccer Stadium | W, | 1-0 | Box Score | Recap | Game Notes | Photos | History | Hide/Show Additional Information For Pomona-Pitzer - September 11, 2026"
+    },
+    {
+      "key": "Sep 13 (Sun) | Redlands",
+      "row": "Sep 13 (Sun) | 11 AM PT | at | Redlands | Redlands, CA | Farquhar Field | W, | 5-0",
+      "full": "Sep 13 (Sun) | 11 AM PT | at | Redlands | Box Score | Recap | Game Notes | Redlands, CA | Farquhar Field | W, | 5-0 | Box Score | Recap | Game Notes | History | Hide/Show Additional Information For Redlands - September 13, 2026"
+    },
+    {
+      "key": "Sep 19 (Sat) | Wheaton (IL)",
+      "row": "Sep 19 (Sat) | 2 PM CT | at | Wheaton (IL) | Wheaton, IL | Joe Bean Stadium | W, | 3-0",
+      "full": "Sep 19 (Sat) | 2 PM CT | at | Wheaton (IL) | Box Score | Recap | Game Notes | Wheaton, IL | Joe Bean Stadium | W, | 3-0 | Box Score | Recap | Game Notes | History | Hide/Show Additional Information For Wheaton (IL) - September 19, 2026"
+    },
+    {
+      "key": "Sep 23 (Wed) | Calvin",
+      "row": "Sep 23 (Wed) | 7 PM ET | at | Calvin | Grand Rapids, MI | Calvin Soccer Stadium | L, | 0-1",
+      "full": "Sep 23 (Wed) | 7 PM ET | at | Calvin | Box Score | Recap | Game Notes | Grand Rapids, MI | Calvin Soccer Stadium | L, | 0-1 | Box Score | Recap | Game Notes | History | Hide/Show Additional Information For Calvin - September 23, 2026"
+    },
+    {
+      "key": "Sep 26 (Sat) | Hope",
+      "row": "Sep 26 (Sat) | 1 PM CT | vs | Hope | Chicago, IL | Stagg Grass Field | W, | 2-0",
+      "full": "Sep 26 (Sat) | 1 PM CT | vs | Hope | Box Score | Recap | Game Notes | Chicago, IL | Stagg Grass Field | W, | 2-0 | Box Score | Recap | Game Notes | History | Hide/Show Additional Information For Hope - September 26, 2026"
+    },
+    {
+      "key": "Sep 30 (Wed) | North Central (IL)",
+      "row": "Sep 30 (Wed) | 4 PM CT | vs | #13 | North Central (IL) | North Central women's soccer has forfeited game with refusal to play | Chicago, IL | Stagg Grass Field | Game Forfeited by North Central",
+      "full": "Sep 30 (Wed) | 4 PM CT | vs | #13 | North Central (IL) | North Central women's soccer has forfeited game with refusal to play | Game Notes | Chicago, IL | Stagg Grass Field | Game Forfeited by North Central | Game Notes | History"
+    },
+    {
+      "key": "Oct 3 (Sat) | New York University",
+      "row": "Oct 3 (Sat) | 8:30 PM ET | UAA | * | at | #22 | New York University | Watch ($) | Newark, NJ | Lubetkin Field at Malcolm Simon Stadium (NJIT)",
+      "full": "Oct 3 (Sat) | 8:30 PM ET | UAA | * | at | #22 | New York University | Watch ($) | Live Stats | Game Notes | History | Newark, NJ | Lubetkin Field at Malcolm Simon Stadium (NJIT) | Newark, NJ | Lubetkin Field at Malcolm Simon Stadium (NJIT) | Watch ($) | Live Stats | Game Notes | History"
+    },
+    {
+      "key": "Oct 10 (Sat) | Carnegie Mellon",
+      "row": "Oct 10 (Sat) | 1:30 PM CT | UAA | * | vs | #23 | Carnegie Mellon | Watch ($) | Chicago, IL | Stagg Grass Fields",
+      "full": "Oct 10 (Sat) | 1:30 PM CT | UAA | * | vs | #23 | Carnegie Mellon | Watch ($) | Live Stats | History | Chicago, IL | Stagg Grass Fields | Chicago, IL | Stagg Grass Fields | Watch ($) | Live Stats | History"
+    },
+    {
+      "key": "Oct 17 (Sat) | Case Western Reserve",
+      "row": "Oct 17 (Sat) | 1:30 PM ET | UAA | * | at | Case Western Reserve | Watch ($) | Cleveland, OH | DiSanto Field",
+      "full": "Oct 17 (Sat) | 1:30 PM ET | UAA | * | at | Case Western Reserve | Watch ($) | Live Stats | History | Cleveland, OH | DiSanto Field | Cleveland, OH | DiSanto Field | Watch ($) | Live Stats | History"
+    },
+    {
+      "key": "Oct 23 (Fri) | Emory",
+      "row": "Oct 23 (Fri) | 3 PM CT | UAA | * | vs | #9 | Emory | Watch ($) | Chicago, IL | Stagg Grass Fields",
+      "full": "Oct 23 (Fri) | 3 PM CT | UAA | * | vs | #9 | Emory | Watch ($) | Live Stats | History | Chicago, IL | Stagg Grass Fields | Chicago, IL | Stagg Grass Fields | Watch ($) | Live Stats | History"
+    },
+    {
+      "key": "Oct 25 (Sun) | Rochester",
+      "row": "Oct 25 (Sun) | 1:30 PM CT | UAA | * | vs | #10 | Rochester | Watch ($) | Chicago, IL | Stagg Grass Fields",
+      "full": "Oct 25 (Sun) | 1:30 PM CT | UAA | * | vs | #10 | Rochester | Watch ($) | Live Stats | History | Chicago, IL | Stagg Grass Fields | Chicago, IL | Stagg Grass Fields | Watch ($) | Live Stats | History"
+    },
+    {
+      "key": "Oct 29 (Thu) | Illinois Tech",
+      "row": "Oct 29 (Thu) | 6 PM CT | at | Illinois Tech | Watch (Free) | Chicago, IL | Stuart Field",
+      "full": "Oct 29 (Thu) | 6 PM CT | at | Illinois Tech | Watch (Free) | Live Stats | History | Chicago, IL | Stuart Field | Chicago, IL | Stuart Field | Watch (Free) | Live Stats | History"
+    },
+    {
+      "key": "Oct 31 (Sat) | Brandeis",
+      "row": "Oct 31 (Sat) | 1:30 PM ET | UAA | * | at | Brandeis | Watch ($) | Waltham, MA | Gordon Field",
+      "full": "Oct 31 (Sat) | 1:30 PM ET | UAA | * | at | Brandeis | Watch ($) | Live Stats | History | Waltham, MA | Gordon Field | Waltham, MA | Gordon Field | Watch ($) | Live Stats | History"
+    },
+    {
+      "key": "Nov 7 (Sat) | WashU",
+      "row": "Nov 7 (Sat) | 1:30 PM CT | UAA | * | vs | #1 | WashU | Watch ($) | Chicago, IL | Stagg Grass Fields",
+      "full": "Nov 7 (Sat) | 1:30 PM CT | UAA | * | vs | #1 | WashU | Watch ($) | Live Stats | History | Chicago, IL | Stagg Grass Fields | Chicago, IL | Stagg Grass Fields | Watch ($) | Live Stats | History"
+    }
+  ]
+}

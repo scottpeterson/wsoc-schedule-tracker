@@ -1,0 +1,147 @@
+{
+  "fetched_at": "2026-10-01T10:31:41",
+  "record": [
+    "Overall    7-0-1  .938",
+    "Conference 0-0-1  .500",
+    "Streak     T1",
+    "Home       5-0-1",
+    "Away       2-0",
+    "Neutral    0-0"
+  ],
+  "text_schedule": [
+    "Sep 1 (Tue)    7 PM        Home      Illinois Institute of Technology     Naperville, Ill. (Benedetti-Wehrli Stadium)                W 3-1",
+    "Sep 5 (Sat)    6 PM        Home      Carleton College                     Naperville, Ill. (Benedetti-Wehrli Stadium)                W 1-0",
+    "Sep 8 (Tue)    7 PM        Home      Calvin University                    Naperville, Ill. (Benedetti-Wehrli Stadium)                W 4-0",
+    "Sep 13 (Sun)   12 PM       Home      Centre College                       Naperville, Ill. (Benedetti-Wehrli Stadium)                W 3-0",
+    "Sep 15 (Tue)   7 PM        Home      University of Wisconsin-Whitewater   Naperville, Ill. (Benedetti-Wehrli Stadium)                W 1-0",
+    "Sep 19 (Sat)   7 PM (ET)   Away      Trine University                     Angola, Ind.                                               W 2-0",
+    "Sep 21 (Mon)   4 PM        Away      Dominican University (Ill.)          River Forest, Ill. (West Campus Field)                     W 2-1",
+    "Sep 26 (Sat)   11 AM       Home      Illinois Wesleyan University         Naperville, Ill. (Benedetti-Wehrli Stadium)                T 2-2",
+    "Sep 30 (Wed)   4 PM        Away      University of Chicago                Chicago, Ill. (Stagg Field)                                Postponed",
+    "Oct 3 (Sat)    1 PM        Away      Elmhurst University                  Elmhurst, Ill. (Langhorst Field)",
+    "Oct 7 (Wed)    7 PM        Home      Millikin University                  Naperville, Ill. (Benedetti-Wehrli Stadium)",
+    "Oct 10 (Sat)   11 AM       Home      Carroll University                   Naperville, Ill. (Benedetti-Wehrli Stadium)",
+    "Oct 14 (Wed)   7 PM        Away      North Park University                Chicago, Ill. (Holmgren Athletic Complex)",
+    "Oct 17 (Sat)   5 PM        Away      Carthage College                     Kenosha, Wis. (Art Keller Field)",
+    "Oct 21 (Wed)   7 PM        Home      Wheaton College (Ill.)               Naperville, Ill. (Benedetti-Wehrli Stadium)",
+    "Oct 28 (Wed)   7 PM        Away      Augustana College (IL)               Rock Island, Ill. (Thorson-Lucken Field)",
+    "Oct 31 (Sat)   TBA         Neutral   CCIW Tournament                      TBA",
+    "Nov 4 (Wed)    TBA         Neutral   CCIW Tournament                      TBA",
+    "Nov 7 (Sat)    TBA         Neutral   CCIW Tournament                      TBA",
+    "Nov 13 (Fri)   TBA         Neutral   NCAA Tournament                      TBA",
+    "Nov 20 (Fri)   TBA         Neutral   NCAA Tournament                      TBA",
+    "Dec 4 (Fri)    TBA         Neutral   NCAA Tournament                      TBA"
+  ],
+  "games": [
+    {
+      "key": "Sep 1 (Tue) | Illinois Institute of Technology",
+      "row": "Sep 1 (Tue) | 7 PM | vs | RV | Illinois Institute of Technology | Partnered with: Navigo Sports Tour | Naperville, Ill. | Benedetti-Wehrli Stadium | W, | 3-1",
+      "full": "Sep 1 (Tue) | 7 PM | vs | RV | Illinois Institute of Technology | Partnered with: Navigo Sports Tour | Box Score | Recap | Naperville, Ill. | Benedetti-Wehrli Stadium | W, | 3-1 | Box Score | Recap | History | Hide/Show Additional Information For Illinois Institute of Technology - September 1, 2026"
+    },
+    {
+      "key": "Sep 5 (Sat) | Carleton College",
+      "row": "Sep 5 (Sat) | 6 PM | vs | #16 | Carleton College | Partnered with: Schafer Condon Carter | Game Day Program | Naperville, Ill. | Benedetti-Wehrli Stadium | W, | 1-0",
+      "full": "Sep 5 (Sat) | 6 PM | vs | #16 | Carleton College | Partnered with: Schafer Condon Carter | Box Score | Recap | Game Day Program | Naperville, Ill. | Benedetti-Wehrli Stadium | W, | 1-0 | Box Score | Recap | Game Day Program | History | Hide/Show Additional Information For Carleton College - September 5, 2026"
+    },
+    {
+      "key": "Sep 8 (Tue) | Calvin University",
+      "row": "Sep 8 (Tue) | 7 PM | vs | #17 | Calvin University | Partnered with: SHRED415 | Naperville, Ill. | Benedetti-Wehrli Stadium | W, | 4-0",
+      "full": "Sep 8 (Tue) | 7 PM | vs | #17 | Calvin University | Partnered with: SHRED415 | Box Score | Recap | Naperville, Ill. | Benedetti-Wehrli Stadium | W, | 4-0 | Box Score | Recap | History | Hide/Show Additional Information For Calvin University - September 8, 2026"
+    },
+    {
+      "key": "Sep 13 (Sun) | Centre College",
+      "row": "Sep 13 (Sun) | 12 PM | vs | Centre College | Senior Day / Partnered with: Baird Warner Placko and Pickens | Naperville, Ill. | Benedetti-Wehrli Stadium | W, | 3-0",
+      "full": "Sep 13 (Sun) | 12 PM | vs | Centre College | Senior Day / Partnered with: Baird Warner Placko and Pickens | Box Score | Recap | Naperville, Ill. | Benedetti-Wehrli Stadium | W, | 3-0 | Box Score | Recap | History | Hide/Show Additional Information For Centre College - September 13, 2026"
+    },
+    {
+      "key": "Sep 15 (Tue) | University of Wisconsin-Whitewater",
+      "row": "Sep 15 (Tue) | 7 PM | vs | University of Wisconsin-Whitewater | Partnered with: The NOW | Naperville, Ill. | Benedetti-Wehrli Stadium | W, | 1-0",
+      "full": "Sep 15 (Tue) | 7 PM | vs | University of Wisconsin-Whitewater | Partnered with: The NOW | Box Score | Recap | Naperville, Ill. | Benedetti-Wehrli Stadium | W, | 1-0 | Box Score | Recap | History | Hide/Show Additional Information For University of Wisconsin-Whitewater - September 15, 2026"
+    },
+    {
+      "key": "Sep 19 (Sat) | Trine University",
+      "row": "Sep 19 (Sat) | 7 PM (ET) | at | Trine University | Angola, Ind. | W, | 2-0",
+      "full": "Sep 19 (Sat) | 7 PM (ET) | at | Trine University | Box Score | Recap | Angola, Ind. | W, | 2-0 | Box Score | Recap | History | Hide/Show Additional Information For Trine University - September 19, 2026"
+    },
+    {
+      "key": "Sep 21 (Mon) | Dominican University (Ill.)",
+      "row": "Sep 21 (Mon) | 4 PM | at | Dominican University (Ill.) | River Forest, Ill. | West Campus Field | W, | 2-1",
+      "full": "Sep 21 (Mon) | 4 PM | at | Dominican University (Ill.) | Box Score | Recap | River Forest, Ill. | West Campus Field | W, | 2-1 | Box Score | Recap | History | Hide/Show Additional Information For Dominican University (Ill.) - September 21, 2026"
+    },
+    {
+      "key": "Sep 26 (Sat) | Illinois Wesleyan University",
+      "row": "Sep 26 (Sat) | 11 AM | CCIW | * | vs | Illinois Wesleyan University | Partnered with: Soccer Shots | Naperville, Ill. | Benedetti-Wehrli Stadium | T, | 2-2",
+      "full": "Sep 26 (Sat) | 11 AM | CCIW | * | vs | Illinois Wesleyan University | Partnered with: Soccer Shots | Box Score | Recap | Naperville, Ill. | Benedetti-Wehrli Stadium | T, | 2-2 | Box Score | Recap | History | Hide/Show Additional Information For Illinois Wesleyan University - September 26, 2026"
+    },
+    {
+      "key": "Sep 30 (Wed) | University of Chicago",
+      "row": "Sep 30 (Wed) | 4 PM | at | #21 | University of Chicago | Chicago, Ill. | Stagg Field | Postponed",
+      "full": "Sep 30 (Wed) | 4 PM | at | #21 | University of Chicago | Watch on Amazon Prime (PPV) | Chicago, Ill. | Stagg Field | Postponed | Watch on Amazon Prime (PPV) | History"
+    },
+    {
+      "key": "Oct 3 (Sat) | Elmhurst University",
+      "row": "Oct 3 (Sat) | 1 PM | CCIW | * | at | Elmhurst University | Watch | Elmhurst, Ill. | Langhorst Field",
+      "full": "Oct 3 (Sat) | 1 PM | CCIW | * | at | Elmhurst University | Watch | Live Stats | History | Elmhurst, Ill. | Langhorst Field | Elmhurst, Ill. | Langhorst Field | Watch | Live Stats | History"
+    },
+    {
+      "key": "Oct 7 (Wed) | Millikin University",
+      "row": "Oct 7 (Wed) | 7 PM | CCIW | * | vs | Millikin University | Partnered with: TR Miller | Watch | Naperville, Ill. | Benedetti-Wehrli Stadium",
+      "full": "Oct 7 (Wed) | 7 PM | CCIW | * | vs | Millikin University | Partnered with: TR Miller | Watch | Live Stats | History | Naperville, Ill. | Benedetti-Wehrli Stadium | Naperville, Ill. | Benedetti-Wehrli Stadium | Watch | Live Stats | History"
+    },
+    {
+      "key": "Oct 10 (Sat) | Carroll University",
+      "row": "Oct 10 (Sat) | 11 AM | CCIW | * | vs | Carroll University | Partnered with: Sugar Steel | Watch | Naperville, Ill. | Benedetti-Wehrli Stadium",
+      "full": "Oct 10 (Sat) | 11 AM | CCIW | * | vs | Carroll University | Partnered with: Sugar Steel | Watch | Live Stats | History | Naperville, Ill. | Benedetti-Wehrli Stadium | Naperville, Ill. | Benedetti-Wehrli Stadium | Watch | Live Stats | History"
+    },
+    {
+      "key": "Oct 14 (Wed) | North Park University",
+      "row": "Oct 14 (Wed) | 7 PM | CCIW | * | at | North Park University | Watch | Chicago, Ill. | Holmgren Athletic Complex",
+      "full": "Oct 14 (Wed) | 7 PM | CCIW | * | at | North Park University | Watch | Live Stats | History | Chicago, Ill. | Holmgren Athletic Complex | Chicago, Ill. | Holmgren Athletic Complex | Watch | Live Stats | History"
+    },
+    {
+      "key": "Oct 17 (Sat) | Carthage College",
+      "row": "Oct 17 (Sat) | 5 PM | CCIW | * | at | Carthage College | Watch | Kenosha, Wis. | Art Keller Field",
+      "full": "Oct 17 (Sat) | 5 PM | CCIW | * | at | Carthage College | Watch | Live Stats | History | Kenosha, Wis. | Art Keller Field | Kenosha, Wis. | Art Keller Field | Watch | Live Stats | History"
+    },
+    {
+      "key": "Oct 21 (Wed) | Wheaton College (Ill.)",
+      "row": "Oct 21 (Wed) | 7 PM | CCIW | * | vs | Wheaton College (Ill.) | Partnered with: Russel Martin Carpets | Watch | Naperville, Ill. | Benedetti-Wehrli Stadium",
+      "full": "Oct 21 (Wed) | 7 PM | CCIW | * | vs | Wheaton College (Ill.) | Partnered with: Russel Martin Carpets | Watch | Live Stats | History | Naperville, Ill. | Benedetti-Wehrli Stadium | Naperville, Ill. | Benedetti-Wehrli Stadium | Watch | Live Stats | History"
+    },
+    {
+      "key": "Oct 28 (Wed) | Augustana College (IL)",
+      "row": "Oct 28 (Wed) | 7 PM | CCIW | * | at | Augustana College (IL) | Watch | Rock Island, Ill. | Thorson-Lucken Field | CCIW Tournament",
+      "full": "Oct 28 (Wed) | 7 PM | CCIW | * | at | Augustana College (IL) | Watch | History | Rock Island, Ill. | Thorson-Lucken Field | Rock Island, Ill. | Thorson-Lucken Field | Watch | History | CCIW Tournament"
+    },
+    {
+      "key": "Oct 31 (Sat) | CCIW Tournament",
+      "row": "Oct 31 (Sat) | TBA | CCIW Tournament",
+      "full": "Oct 31 (Sat) | TBA | CCIW Tournament | History | TBA | History"
+    },
+    {
+      "key": "Nov 4 (Wed) | CCIW Tournament",
+      "row": "Nov 4 (Wed) | TBA | CCIW Tournament",
+      "full": "Nov 4 (Wed) | TBA | CCIW Tournament | History | TBA | History"
+    },
+    {
+      "key": "Nov 7 (Sat) | CCIW Tournament",
+      "row": "Nov 7 (Sat) | TBA | CCIW Tournament | NCAA Tournament",
+      "full": "Nov 7 (Sat) | TBA | CCIW Tournament | History | TBA | History | NCAA Tournament"
+    },
+    {
+      "key": "Nov 13 (Fri) | NCAA Tournament",
+      "row": "Nov 13 (Fri) | Nov 15 (Sun) | TBA | NCAA Tournament | NCAA First and Second Round",
+      "full": "Nov 13 (Fri) | Nov 15 (Sun) | TBA | NCAA Tournament | NCAA First and Second Round | History | TBA | History"
+    },
+    {
+      "key": "Nov 20 (Fri) | NCAA Tournament",
+      "row": "Nov 20 (Fri) | Nov 22 (Sun) | TBA | NCAA Tournament | NCAA Third and Fourth Round",
+      "full": "Nov 20 (Fri) | Nov 22 (Sun) | TBA | NCAA Tournament | NCAA Third and Fourth Round | History | TBA | History"
+    },
+    {
+      "key": "Dec 4 (Fri) | NCAA Tournament",
+      "row": "Dec 4 (Fri) | Dec 6 (Sun) | TBA | NCAA Tournament | NCAA Semifinal and National Championship",
+      "full": "Dec 4 (Fri) | Dec 6 (Sun) | TBA | NCAA Tournament | NCAA Semifinal and National Championship | History | TBA | History"
+    }
+  ]
+}

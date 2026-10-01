@@ -1,0 +1,10 @@
+[
+  {
+    "name": "NCAA scoreboard (stats.ncaa.org)",
+    "status": "Canceled",
+    "detail": "Division III women's soccer scoreboard for 09/30/2026 lists North Central (IL) (7-0-1) vs UChicago (7-1), 05:00 PM ET, as Canceled, with no box score.",
+    "url": "https://stats.ncaa.org/contests/livestream_scoreboards?utf8=%E2%9C%93&sport_code=WSO&academic_year=2027&division=3&game_date=09%2F30%2F2026&conference_id=0&tournament_id=&commit=Submit",
+    "checked": "2026-10-01 11:05",
+    "how": "Checked by hand in a browser. stats.ncaa.org serves a bot challenge to scripted requests, so the hourly job does not fetch it."
+  }
+]
