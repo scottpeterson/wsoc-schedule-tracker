@@ -16,7 +16,9 @@ the two schools was not played and each school listed it differently.
 | `changes.jsonl` | One JSON object per change, written by `check_schedules.py`, read by `build_site.py` |
 | `manual_sources.json` | Sources checked by hand (the NCAA scoreboard), shown as cards on the site |
 | `site/assets/` | Team logos copied from `~/projects/d3-bball-npi/myapp/data/logos/`; colors in `schools.json` come from `team_colors.json` there |
-| `run_hourly.sh` | What launchd runs: check, build, and push `site/` when it is a git repo with a remote |
+| `run_hourly.sh` | What launchd runs on the Mac. With the GitHub remote in place it only pulls and notifies; GitHub Actions does the checking |
+| `notify_new_events.py` | macOS notification for each new event in `changes.jsonl`, whichever runner found it |
+| `.github/workflows/track.yml` | Hourly cloud run: check, build, commit back to `main`; Pages redeploys from `docs/` |
 | `snapshots/<slug>.json` | Current normalized schedule per school |
 | `history/` | Previous snapshot archived each time a change is detected |
 | `changes.log` | Append-only human-readable record of every change (and the baselines) |
@@ -27,6 +29,14 @@ the two schools was not played and each school listed it differently.
 Standard library only. Runs with `/opt/homebrew/bin/python3`. Lives under
 `~/projects` on purpose: launchd cannot execute scripts under `~/Documents`
 or `~/Desktop` without a Full Disk Access grant.
+
+## Where things run
+
+GitHub Actions runs `check_schedules.py` and `build_site.py` every hour at :17 UTC
+and commits `snapshots/`, `changes.jsonl`, `changes.log`, and `docs/` back to
+`main`. GitHub Pages serves `docs/`. The Mac job does not check or commit when
+the remote exists, which avoids two writers racing on the same files; it pulls
+and notifies. To force a cloud run: `gh workflow run track.yml`.
 
 ## Schedule
 
@@ -59,13 +69,10 @@ Open the school's Sidearm schedule page, copy the **Text** link
 (`/services/schedule_txt.ashx?schedule=<id>`), and add an entry to
 `schools.json`. The next run saves a baseline and starts diffing.
 
-## Publishing the site (GitHub Pages)
+## Publishing (done 2026-10-01)
 
-1. Create an empty public GitHub repo, for example `kerfuffle-site`.
-2. `cd site && git init -b main && git remote add origin git@github.com:<you>/kerfuffle-site.git`
-3. `echo www.chicagoandnorthcentralkerfuffle.com > CNAME` (only once the domain exists).
-4. `git add -A && git commit -m "Initial site" && git push -u origin main`
-5. Repo Settings, Pages: deploy from branch `main`, folder `/`. Add the custom domain and enable HTTPS.
-6. At the registrar, add a CNAME record for `www` pointing to `<you>.github.io`, and the four GitHub Pages A records for the apex.
-
-From then on `run_hourly.sh` commits and pushes `site/` whenever the page changed.
+Repo: https://github.com/scottpeterson/wsoc-schedule-tracker. Pages serves
+`docs/` from `main`. Custom domain: set `www.chicagoandnorthcentralkerfuffle.com`
+in repo Settings, Pages; DNS at the registrar is four A records on the apex
+(185.199.108.153, .109.153, .110.153, .111.153) and a CNAME `www` to
+`scottpeterson.github.io`, all unproxied.
