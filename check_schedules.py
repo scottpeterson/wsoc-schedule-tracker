@@ -294,6 +294,7 @@ def main():
         old = json.loads(snap_path.read_text())
         changes = diff_snapshots(old, new)
         if not changes:
+            snap_path.write_text(json.dumps(new, indent=2))  # keep fetched_at current so the site shows when it last looked
             log(f"{name}: no change ({len(new['games'])} games)")
             continue
 

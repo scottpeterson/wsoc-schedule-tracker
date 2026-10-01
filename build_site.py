@@ -157,7 +157,7 @@ def manual_cards():
             f'<div><div class="who">{esc(src["name"])}</div><div class="what">Official scoreboard</div></div></header>'
             f'<div class="body"><p class="status" style="color:var(--ncaa)">{esc(src["status"])}</p>'
             f'<p style="margin:0 0 .5em">{esc(src["detail"])}</p>'
-            f'<p class="meta">Checked {esc(src["checked"])} &middot; <a href="{esc(src["url"])}">scoreboard</a></p>'
+            f'<p class="meta">Checked {esc(src["checked"])} Central &middot; <a href="{esc(src["url"])}">scoreboard</a></p>'
             f'</div></div>')
     return "\n".join(cards)
 
