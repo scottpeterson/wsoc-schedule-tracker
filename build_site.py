@@ -225,11 +225,11 @@ def main():
     page = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Chicago and North Central Kerfuffle</title>
-<meta name="description" content="How UChicago, North Central (IL), and the NCAA list the September 30, 2026 women's soccer game that was not played, updated hourly.">
+<meta name="description" content="How UChicago, North Central (IL), and the NCAA list the September 30, 2026 women's soccer game that was not played, updated twice a day.">
 <link rel="icon" href="assets/uchicago.png">
 <style>{CSS}</style></head><body><main>
 <h1>The Chicago and North Central Kerfuffle</h1>
-<p class="sub">The September 30, 2026 women's soccer game between UChicago and North Central (IL) was not played. UChicago lists it as a forfeit. North Central lists it as postponed. The NCAA lists it as canceled. This page tracks both schools' schedule listings and records every change, updated hourly.</p>
+<p class="sub">The September 30, 2026 women's soccer game between UChicago and North Central (IL) was not played. UChicago lists it as a forfeit. North Central lists it as postponed. The NCAA lists it as canceled. This page tracks both schools' schedule listings and records every change, updated twice a day.</p>
 <h2 id="now">Current listings</h2>
 <div class="cards">
 {chr(10).join(school_card(s) for s in SCHOOLS)}

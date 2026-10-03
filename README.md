@@ -1,7 +1,7 @@
 # Women's soccer schedule tracker
 
 Watches the women's soccer schedule pages of North Central (IL) and UChicago
-every hour and reports any change: status labels (Postponed, Canceled,
+twice a day and reports any change: status labels (Postponed, Canceled,
 Forfeit), results, times, locations, added or removed games, and the
 published record. Built on 2026-10-01 after the September 30 game between
 the two schools was not played and each school listed it differently.
@@ -18,13 +18,13 @@ the two schools was not played and each school listed it differently.
 | `site/assets/` | Team logos copied from `~/projects/d3-bball-npi/myapp/data/logos/`; colors in `schools.json` come from `team_colors.json` there |
 | `run_hourly.sh` | What launchd runs on the Mac. With the GitHub remote in place it only pulls and notifies; GitHub Actions does the checking |
 | `notify_new_events.py` | macOS notification for each new event in `changes.jsonl`, whichever runner found it |
-| `.github/workflows/track.yml` | Hourly cloud run: check, build, commit back to `main`; Pages redeploys from `docs/` |
+| `.github/workflows/track.yml` | Twice-daily cloud run: check, build, commit back to `main`; Pages redeploys from `docs/` |
 | `snapshots/<slug>.json` | Current normalized schedule per school |
 | `history/` | Previous snapshot archived each time a change is detected |
 | `changes.log` | Append-only human-readable record of every change (and the baselines) |
 | `latest_changes.md` | The most recent change report |
 | `logs/tracker.log`, `logs/tracker.err` | launchd stdout and stderr |
-| `state.json` | Fetch-failure state so a dead site notifies once, not hourly |
+| `state.json` | Fetch-failure state so a dead site notifies once, not on every run |
 
 Standard library only. Runs with `/opt/homebrew/bin/python3`. Lives under
 `~/projects` on purpose: launchd cannot execute scripts under `~/Documents`
@@ -32,7 +32,7 @@ or `~/Desktop` without a Full Disk Access grant.
 
 ## Where things run
 
-GitHub Actions runs `check_schedules.py` and `build_site.py` every hour at :17 UTC
+GitHub Actions runs `check_schedules.py` and `build_site.py` twice a day, at 00:17 and 12:17 UTC (changed from hourly on 2026-10-03),
 and commits `snapshots/`, `changes.jsonl`, `changes.log`, and `docs/` back to
 `main`. GitHub Pages serves `docs/`. The Mac job does not check or commit when
 the remote exists, which avoids two writers racing on the same files; it pulls
@@ -58,7 +58,7 @@ launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.scottpeterson.wsoc-s
 
 `stats.ncaa.org` lists the game as Canceled (Division III women's soccer
 scoreboard for 09/30/2026, contest 6585313). The site serves an Akamai bot
-challenge to scripted requests, so the hourly job does not fetch it; update
+challenge to scripted requests, so the scheduled job does not fetch it; update
 `manual_sources.json` by hand after checking it in a browser. The public
 `ncaa.com` scoreboard API returns at most 100 games per day and does not
 include canceled games, so it cannot stand in for it.
