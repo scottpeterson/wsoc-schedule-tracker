@@ -253,7 +253,7 @@ def main():
 </section>
 <section class="more">
 <h2 id="more">More Division III numbers</h2>
-<p>This page is a side project of <a href="https://thed3statlab.com/">The D3 Stat Lab</a>, independent Division III women's basketball analytics: NPI rankings, season simulations with tournament odds, composite ratings, and conference rankings, updated through the season. If the NPI angle in this story interests you, that is where the metric is explained and tracked.</p>
+<p>This page is a side project of <a href="https://thed3statlab.com/">The D3 Stat Lab</a>, an independent Division III women's basketball analytics site. It publishes NPI rankings, season simulations with tournament odds, composite ratings, and conference rankings through the season. If the NPI angle in this story interests you, that is where the metric is explained and tracked.</p>
 </section>
 <footer>Built {esc(built)} Central. Not affiliated with either school, the CCIW, the UAA, or the NCAA. Schedule data comes from the schools' public schedule pages. Quotes come from the linked public posts. Logos belong to their schools.</footer>
 </main></body></html>
