@@ -242,7 +242,7 @@ def main():
 {change_log_html()}
 <section class="musings">
 <h2 id="musings">Scott's Musings</h2>
-<p class="note">Opinion, not fact. Everything above this box is sourced. This box is one person's view, and I have no idea what occurred in the Chicago vs. North Central (IL) game.</p>
+<p class="note">This is my opinion. The sections above cite their sources. This box does not, and I have no idea what occurred in the Chicago vs. North Central (IL) game.</p>
 <blockquote>
 <p>&ldquo;The NCAA may very well have a good reason for the rule that a game that has not started can only be a no-contest, but especially in the NPI world, it creates some perverse incentives.</p>
 <p>A team that is above the at-large cutline (either real or projected, depending on the time in the season), doesn't have much of an incentive to play a final game, especially one they might lose. This creates the incentive to &ldquo;invent&rdquo; a reason to not play the game.</p>
