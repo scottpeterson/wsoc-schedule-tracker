@@ -25,8 +25,8 @@ GAME_DATE_TOKEN = "Sep 30 (Wed)"
 FIELD_ORDER = ["Date", "Time", "Home or away", "Opponent", "Location", "Status", "Note"]
 
 CSS = """
-:root{--bg:#faf7f4;--fg:#1d1d1b;--muted:#5d5d58;--card:#ffffff;--line:#e3dcd7;--link:#1c5d99;--ncaa:#0a4f8f;--c-north_central:#c30202;--c-uchicago:#880000}
-@media (prefers-color-scheme:dark){:root{--bg:#161312;--fg:#ecece6;--muted:#a3a39b;--card:#221c1b;--line:#3a302e;--link:#7fb3e6;--ncaa:#6fa8dc;--c-north_central:#ff7a7a;--c-uchicago:#f29b9b}}
+:root{--bg:#faf7f4;--fg:#1d1d1b;--muted:#5d5d58;--card:#ffffff;--line:#e3dcd7;--gray:#ebe8e4;--link:#1c5d99;--ncaa:#0a4f8f;--c-north_central:#c30202;--c-uchicago:#880000}
+@media (prefers-color-scheme:dark){:root{--bg:#161312;--fg:#ecece6;--muted:#a3a39b;--card:#221c1b;--line:#3a302e;--gray:#2a2524;--link:#7fb3e6;--ncaa:#6fa8dc;--c-north_central:#ff7a7a;--c-uchicago:#f29b9b}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
 main{max-width:900px;margin:0 auto;padding:24px 16px 64px}h1{font-size:2rem;line-height:1.15;margin:.2em 0}h2{margin-top:2em;border-bottom:1px solid var(--line);padding-bottom:.25em}
 p.sub{color:var(--muted);margin-bottom:1.5em}a{color:var(--link)}
@@ -43,6 +43,7 @@ th,td{border-bottom:1px solid var(--line);padding:7px 10px;text-align:center;ver
 ul{padding-left:1.2em}li{margin:.35em 0}.timeline li{margin:.7em 0}.timeline time{font-weight:600}
 .rules h3{margin:1.5em 0 .3em;font-size:1.05rem}blockquote{margin:.6em 0;padding:.5em 1em;border-left:3px solid var(--line);background:var(--card);border-radius:0 8px 8px 0}blockquote p{margin:.4em 0}
 .event{margin:1.2em 0}.event h3{margin:0 0 .3em;font-size:1rem}.small{color:var(--muted);font-size:.9rem}
+.musings{margin-top:3em;padding:18px 20px;border-radius:12px;background:var(--gray)}.musings h2{margin:0 0 .3em;border:0;padding:0;font-size:1.15rem}.musings .note{margin:0 0 .9em;font-size:.9rem;font-weight:600;color:var(--muted)}.musings blockquote{margin:0;padding:0;border:0;background:none;font-style:italic}.musings blockquote p{margin:.6em 0}
 .more{margin-top:3em;padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:var(--card)}.more h2{margin:0 0 .4em;border:0;padding:0;font-size:1.15rem}.more p{margin:0}
 footer{margin-top:2em;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:1em}
 """
@@ -239,6 +240,16 @@ def main():
 <h2 id="changes">Change log</h2>
 <p class="small">Every change to either schedule listing, newest first.</p>
 {change_log_html()}
+<section class="musings">
+<h2 id="musings">Scott's Musings</h2>
+<p class="note">Opinion, not fact. Everything above this box is sourced. This box is one person's view.</p>
+<blockquote>
+<p>&ldquo;The NCAA may very well have a good reason for the rule that a game that has not started can only be a no-contest, but especially in the NPI world, it creates some perverse incentives.</p>
+<p>A team that is above the at-large cutline (either real or projected, depending on the time in the season), doesn't have much of an incentive to play a final game, especially one they might lose. This creates the incentive to &ldquo;invent&rdquo; a reason to not play the game.</p>
+<p>I assumed that pure pride, decency, competitiveness, or conference-specific rules would prevent such occurrences.</p>
+<p>But even a single one occurring would be an extremely bad look for that team and the NCAA.&rdquo;</p>
+</blockquote>
+</section>
 <section class="more">
 <h2 id="more">More Division III numbers</h2>
 <p>This page is a side project of <a href="https://thed3statlab.com/">The D3 Stat Lab</a>, independent Division III women's basketball analytics: NPI rankings, season simulations with tournament odds, composite ratings, and conference rankings, updated through the season. If the NPI angle in this story interests you, that is where the metric is explained and tracked.</p>
