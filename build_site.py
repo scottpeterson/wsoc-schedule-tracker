@@ -25,8 +25,13 @@ GAME_DATE_TOKEN = "Sep 30 (Wed)"
 FIELD_ORDER = ["Date", "Time", "Home or away", "Opponent", "Location", "Status", "Note"]
 
 CSS = """
-:root{--bg:#faf7f4;--fg:#1d1d1b;--muted:#5d5d58;--card:#ffffff;--line:#e3dcd7;--gray:#ebe8e4;--link:#1c5d99;--ncaa:#0a4f8f;--c-north_central:#c30202;--c-uchicago:#880000}
-@media (prefers-color-scheme:dark){:root{--bg:#161312;--fg:#ecece6;--muted:#a3a39b;--card:#221c1b;--line:#3a302e;--gray:#2a2524;--link:#7fb3e6;--ncaa:#6fa8dc;--c-north_central:#ff7a7a;--c-uchicago:#f29b9b}}
+:root{color-scheme:light;--bg:#faf7f4;--fg:#1d1d1b;--muted:#5d5d58;--card:#ffffff;--line:#e3dcd7;--gray:#ebe8e4;--link:#1c5d99;--accent:#1c5d99;--ncaa:#0a4f8f;--c-north_central:#c30202;--c-uchicago:#880000}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#161312;--fg:#ecece6;--muted:#a3a39b;--card:#221c1b;--line:#3a302e;--gray:#2a2524;--link:#7fb3e6;--accent:#7fb3e6;--ncaa:#6fa8dc;--c-north_central:#ff7a7a;--c-uchicago:#f29b9b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#161312;--fg:#ecece6;--muted:#a3a39b;--card:#221c1b;--line:#3a302e;--gray:#2a2524;--link:#7fb3e6;--accent:#7fb3e6;--ncaa:#6fa8dc;--c-north_central:#ff7a7a;--c-uchicago:#f29b9b}}
+.top{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:12px 24px}.top>div:first-child{flex:1 1 520px}
+.ctl{display:flex;flex-direction:column;gap:4px}.seglabel{font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-left:2px}
+.seg{display:inline-flex;align-items:stretch;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card)}.seg button{border:0;background:transparent;color:var(--muted);padding:9px 14px;font:inherit;font-size:.95rem;cursor:pointer;min-width:44px}.seg button+button{border-left:1px solid var(--line)}
+.seg button.active{background:var(--accent);color:#fff;font-weight:700}.seg button.active::before{content:"\\2713\\00a0"}:root[data-theme="dark"] .seg button.active{color:#161312}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .seg button.active{color:#161312}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
 main{max-width:900px;margin:0 auto;padding:24px 16px 64px}h1{font-size:2rem;line-height:1.15;margin:.2em 0}h2{margin-top:2em;border-bottom:1px solid var(--line);padding-bottom:.25em}
 p.sub{color:var(--muted);margin-bottom:1.5em}a{color:var(--link)}
@@ -41,11 +46,39 @@ dl{display:grid;grid-template-columns:max-content 1fr;gap:4px 14px;margin:0;font
 table{border-collapse:collapse;width:100%;margin:.6em 0 1.2em;font-size:.95rem}
 th,td{border-bottom:1px solid var(--line);padding:7px 10px;text-align:center;vertical-align:top}th:first-child,td:first-child{text-align:left}
 ul{padding-left:1.2em}li{margin:.35em 0}.timeline li{margin:.7em 0}.timeline time{font-weight:600}
-.rules h3{margin:1.5em 0 .3em;font-size:1.05rem}blockquote{margin:.6em 0;padding:.5em 1em;border-left:3px solid var(--line);background:var(--card);border-radius:0 8px 8px 0}blockquote p{margin:.4em 0}
+.rules h3{margin:1.5em 0 .3em;font-size:1.05rem}blockquote{margin:.6em 0;padding:.5em 1em;border:1px solid var(--line);background:var(--card);border-radius:8px}blockquote p{margin:.4em 0}
 .event{margin:1.2em 0}.event h3{margin:0 0 .3em;font-size:1rem}.small{color:var(--muted);font-size:.9rem}
 .musings{margin-top:3em;padding:18px 20px;border-radius:12px;background:var(--gray)}.musings h2{margin:0 0 .3em;border:0;padding:0;font-size:1.15rem}.musings .note{margin:0 0 .9em;font-size:.9rem;font-weight:600;color:var(--muted)}.musings blockquote{margin:0;padding:0;border:0;background:none;font-style:italic}.musings blockquote p{margin:.6em 0}
 .more{margin-top:3em;padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:var(--card)}.more h2{margin:0 0 .4em;border:0;padding:0;font-size:1.15rem}.more p{margin:0}
+p.detail{margin:0 0 .5em}
 footer{margin-top:2em;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:1em}
+thead th[aria-sort]{cursor:pointer;user-select:none}thead th[aria-sort]::after{content:"";display:inline-block;width:.9em;color:var(--faint,var(--muted))}thead th[aria-sort="ascending"]::after{content:"\\25B4"}thead th[aria-sort="descending"]::after{content:"\\25BE"}
+"""
+
+JS = r"""
+(function(){
+const root=document.documentElement,KEY='kerfuffle';
+const saved=(()=>{try{return localStorage.getItem(KEY+'-theme')}catch(e){return null}})();
+if(saved==='dark'||saved==='light')root.setAttribute('data-theme',saved);
+function isDark(){const t=root.getAttribute('data-theme');return t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches)}
+function paintTheme(){const dark=isDark();document.querySelectorAll('.th').forEach(b=>b.classList.toggle('active',(b.dataset.theme==='dark')===dark));document.querySelectorAll('meta[name=theme-color]').forEach(m=>{m.removeAttribute('media');m.content=dark?'#161312':'#faf7f4'});}
+document.querySelectorAll('.th').forEach(b=>b.addEventListener('click',()=>{root.setAttribute('data-theme',b.dataset.theme);try{localStorage.setItem(KEY+'-theme',b.dataset.theme)}catch(e){}paintTheme();}));
+matchMedia('(prefers-color-scheme:dark)').addEventListener('change',paintTheme);
+paintTheme();
+})();
+// Sortable tables: click a header to sort by that column; click again to reverse.
+(function(){
+function cellKey(td){if(!td)return '';const t=td.querySelector('time[datetime]');const raw=td.dataset.sort!==undefined?td.dataset.sort:t?t.getAttribute('datetime'):td.textContent.trim();const n=parseFloat(String(raw).replace(/[,%#$]/g,''));return isNaN(n)||!/^[-+#$]?[\d.,]+%?$/.test(String(raw).replace(/\s/g,''))?String(raw).toLowerCase():n;}
+document.querySelectorAll('table').forEach(t=>{
+  const head=t.tHead,body=t.tBodies[0];if(!head||!body||body.rows.length<2)return;
+  const ths=[...head.rows[head.rows.length-1].cells];
+  ths.forEach((th,i)=>{th.setAttribute('aria-sort','none');th.setAttribute('role','button');th.tabIndex=0;
+    const go=()=>{const dir=th.getAttribute('aria-sort')==='ascending'?'descending':'ascending';ths.forEach(h=>h.setAttribute('aria-sort','none'));th.setAttribute('aria-sort',dir);
+      const rows=[...body.rows];rows.sort((a,b)=>{const x=cellKey(a.cells[i]),y=cellKey(b.cells[i]);const r=typeof x==='number'&&typeof y==='number'?x-y:typeof x==='number'?-1:typeof y==='number'?1:String(x).localeCompare(String(y));return dir==='ascending'?r:-r;});
+      rows.forEach(r=>body.appendChild(r));};
+    th.addEventListener('click',go);th.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});});
+});
+})();
 """
 
 CITY_RE = re.compile(r"^[A-Z][A-Za-z.' -]+, ([A-Z][a-z]{1,4}\.?|[A-Z]{2})$")
@@ -157,7 +190,7 @@ def manual_cards():
             f'<div class="card"><header style="background:var(--ncaa)">'
             f'<div><div class="who">{esc(src["name"])}</div><div class="what">Official scoreboard</div></div></header>'
             f'<div class="body"><p class="status" style="color:var(--ncaa)">{esc(src["status"])}</p>'
-            f'<p style="margin:0 0 .5em">{esc(src["detail"])}</p>'
+            f'<p class="detail">{esc(src["detail"])}</p>'
             f'<p class="meta">Checked {esc(src["checked"])} Central &middot; <a href="{esc(src["url"])}">scoreboard</a></p>'
             f'</div></div>')
     return "\n".join(cards)
@@ -225,13 +258,18 @@ def main():
     built = datetime.now(ZoneInfo("America/Chicago")).strftime("%Y-%m-%d %H:%M")  # same clock on the Mac and on GitHub runners
     page = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="darkreader-lock">
+<meta name="theme-color" content="#faf7f4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161312" media="(prefers-color-scheme: dark)">
 <title>Chicago and North Central Kerfuffle</title>
 <meta name="description" content="How UChicago, North Central (IL), and the NCAA list the September 30, 2026 women's soccer game that was not played, updated twice a day.">
 <link rel="icon" href="assets/uchicago.png">
 <script data-goatcounter="https://chicagoandnorthcentralkerfuffle.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <style>{CSS}</style></head><body><main>
-<h1>The Chicago and North Central Kerfuffle</h1>
-<p class="sub">The September 30, 2026 women's soccer game between UChicago and North Central (IL) was not played. UChicago lists it as a forfeit. North Central lists it as postponed. The NCAA lists it as canceled. This page tracks both schools' schedule listings and records every change, updated twice a day.</p>
+<div class="top"><div><h1>The Chicago and North Central Kerfuffle</h1>
+<p class="sub">The September 30, 2026 women's soccer game between UChicago and North Central (IL) was not played. UChicago lists it as a forfeit. North Central lists it as postponed. The NCAA lists it as canceled. This page tracks both schools' schedule listings and records every change, updated twice a day.</p></div>
+<div class="ctl"><span class="seglabel" id="lbl-theme">Theme</span><div class="seg" role="group" aria-labelledby="lbl-theme"><button type="button" class="th" data-theme="light">Light</button><button type="button" class="th" data-theme="dark">Dark</button></div></div></div>
 <h2 id="now">Current listings</h2>
 <div class="cards">
 {chr(10).join(school_card(s) for s in SCHOOLS)}
@@ -256,8 +294,10 @@ def main():
 <p>This page is a side project of <a href="https://thed3statlab.com/">The D3 Stat Lab</a>, an independent Division III women's basketball analytics site. It publishes NPI rankings, season simulations with tournament odds, composite ratings, and conference rankings through the season. If the NPI angle in this story interests you, that is where the metric is explained and tracked.</p>
 </section>
 <footer>Built {esc(built)} Central. Not affiliated with either school, the CCIW, the UAA, or the NCAA. Schedule data comes from the schools' public schedule pages. Quotes come from the linked public posts. Logos belong to their schools.</footer>
-</main></body></html>
+</main><script>{JS}</script></body></html>
 """
+    # Every external link opens in a new tab, including the ones inside content/story.html.
+    page = re.sub(r'<a href="(https?://[^"]*)"(?![^>]*\btarget=)', r'<a href="\1" target="_blank" rel="noopener"', page)
     OUT.write_text(page)
     print(f"wrote {OUT} ({len(page)} bytes)")
 
