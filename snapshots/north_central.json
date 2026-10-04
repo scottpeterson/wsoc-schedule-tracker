@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-10-03T07:33:51-05:00",
+  "fetched_at": "2026-10-04T00:52:18-05:00",
   "record": [
-    "Overall    7-0-1  .938",
-    "Conference 0-0-1  .500",
-    "Streak     T1",
+    "Overall    8-0-1  .944",
+    "Conference 1-0-1  .750",
+    "Streak     W1",
     "Home       5-0-1",
-    "Away       2-0",
+    "Away       3-0",
     "Neutral    0-0"
   ],
   "text_schedule": [
@@ -18,7 +18,7 @@
     "Sep 21 (Mon)   4 PM        Away      Dominican University (Ill.)          River Forest, Ill. (West Campus Field)                     W 2-1",
     "Sep 26 (Sat)   11 AM       Home      Illinois Wesleyan University         Naperville, Ill. (Benedetti-Wehrli Stadium)                T 2-2",
     "Sep 30 (Wed)   4 PM        Away      University of Chicago                Chicago, Ill. (Stagg Field)                                Postponed",
-    "Oct 3 (Sat)    1 PM        Away      Elmhurst University                  Elmhurst, Ill. (Langhorst Field)",
+    "Oct 3 (Sat)    1 PM        Away      Elmhurst University                  Elmhurst, Ill. (Langhorst Field)                           W 2-1",
     "Oct 7 (Wed)    7 PM        Home      Millikin University                  Naperville, Ill. (Benedetti-Wehrli Stadium)",
     "Oct 10 (Sat)   11 AM       Home      Carroll University                   Naperville, Ill. (Benedetti-Wehrli Stadium)",
     "Oct 14 (Wed)   7 PM        Away      North Park University                Chicago, Ill. (Holmgren Athletic Complex)",
@@ -80,8 +80,8 @@
     },
     {
       "key": "Oct 3 (Sat) | Elmhurst University",
-      "row": "Oct 3 (Sat) | 1 PM | CCIW | * | at | Elmhurst University | Watch | Elmhurst, Ill. | Langhorst Field",
-      "full": "Oct 3 (Sat) | 1 PM | CCIW | * | at | Elmhurst University | Watch | Live Stats | History | Elmhurst, Ill. | Langhorst Field | Elmhurst, Ill. | Langhorst Field | Watch | Live Stats | History"
+      "row": "Oct 3 (Sat) | 1 PM | CCIW | * | at | Elmhurst University | Elmhurst, Ill. | Langhorst Field | W, | 2-1",
+      "full": "Oct 3 (Sat) | 1 PM | CCIW | * | at | Elmhurst University | Box Score | Recap | Elmhurst, Ill. | Langhorst Field | W, | 2-1 | Box Score | Recap | History | Hide/Show Additional Information For Elmhurst University - October 3, 2026"
     },
     {
       "key": "Oct 7 (Wed) | Millikin University",

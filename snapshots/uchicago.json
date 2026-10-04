@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-10-03T07:33:52-05:00",
+  "fetched_at": "2026-10-04T00:52:19-05:00",
   "record": [
-    "Overall    7-1  .875",
-    "Conference 0-0  .000",
-    "Streak     W1",
+    "Overall    8-1  .889",
+    "Conference 1-0  1.000",
+    "Streak     W2",
     "Home       4-0",
-    "Away       3-1",
+    "Away       4-1",
     "Neutral    0-0"
   ],
   "text_schedule": [
@@ -18,7 +18,7 @@
     "Sep 23 (Wed)   7 PM ET      Away   Calvin                 Grand Rapids, MI | Calvin Soccer Stadium                                   L 0-1",
     "Sep 26 (Sat)   1 PM CT      Home   Hope                   Chicago, IL | Stagg Grass Field                                            W 2-0",
     "Sep 30 (Wed)   4 PM CT      Home   North Central (IL)     Chicago, IL | Stagg Grass Field",
-    "Oct 3 (Sat)    8:30 PM ET   Away   New York University    Newark, NJ | Lubetkin Field at Malcolm Simon Stadium (NJIT)",
+    "Oct 3 (Sat)    8:30 PM ET   Away   New York University    Newark, NJ | Lubetkin Field at Malcolm Simon Stadium (NJIT)                W 1-0",
     "Oct 10 (Sat)   1:30 PM CT   Home   Carnegie Mellon        Chicago, IL | Stagg Grass Fields",
     "Oct 17 (Sat)   1:30 PM ET   Away   Case Western Reserve   Cleveland, OH | DiSanto Field",
     "Oct 23 (Fri)   3 PM CT      Home   Emory                  Chicago, IL | Stagg Grass Fields",
@@ -75,8 +75,8 @@
     },
     {
       "key": "Oct 3 (Sat) | New York University",
-      "row": "Oct 3 (Sat) | 8:30 PM ET | UAA | * | at | #22 | New York University | Watch ($) | Newark, NJ | Lubetkin Field at Malcolm Simon Stadium (NJIT)",
-      "full": "Oct 3 (Sat) | 8:30 PM ET | UAA | * | at | #22 | New York University | Watch ($) | Live Stats | Preview | Game Notes | History | Newark, NJ | Lubetkin Field at Malcolm Simon Stadium (NJIT) | Newark, NJ | Lubetkin Field at Malcolm Simon Stadium (NJIT) | Watch ($) | Live Stats | Preview | Game Notes | History | Hide/Show Additional Information For New York University - October 3, 2026"
+      "row": "Oct 3 (Sat) | 8:30 PM ET | UAA | * | at | #22 | New York University | Newark, NJ | Lubetkin Field at Malcolm Simon Stadium (NJIT) | W, | 1-0",
+      "full": "Oct 3 (Sat) | 8:30 PM ET | UAA | * | at | #22 | New York University | Box Score | Game Notes | Newark, NJ | Lubetkin Field at Malcolm Simon Stadium (NJIT) | W, | 1-0 | Box Score | Game Notes | History | Hide/Show Additional Information For New York University - October 3, 2026"
     },
     {
       "key": "Oct 10 (Sat) | Carnegie Mellon",
