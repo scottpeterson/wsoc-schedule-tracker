@@ -228,6 +228,7 @@ def main():
 <title>Chicago and North Central Kerfuffle</title>
 <meta name="description" content="How UChicago, North Central (IL), and the NCAA list the September 30, 2026 women's soccer game that was not played, updated twice a day.">
 <link rel="icon" href="assets/uchicago.png">
+<script data-goatcounter="https://chicagoandnorthcentralkerfuffle.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <style>{CSS}</style></head><body><main>
 <h1>The Chicago and North Central Kerfuffle</h1>
 <p class="sub">The September 30, 2026 women's soccer game between UChicago and North Central (IL) was not played. UChicago lists it as a forfeit. North Central lists it as postponed. The NCAA lists it as canceled. This page tracks both schools' schedule listings and records every change, updated twice a day.</p>
