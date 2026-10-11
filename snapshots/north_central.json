@@ -1,10 +1,10 @@
 {
-  "fetched_at": "2026-10-10T12:20:51-05:00",
+  "fetched_at": "2026-10-11T00:46:40-05:00",
   "record": [
-    "Overall    9-0-1  .950",
-    "Conference 2-0-1  .833",
-    "Streak     W2",
-    "Home       6-0-1",
+    "Overall    10-0-1  .955",
+    "Conference 3-0-1  .875",
+    "Streak     W3",
+    "Home       7-0-1",
     "Away       3-0",
     "Neutral    0-0"
   ],
@@ -20,7 +20,7 @@
     "Sep 30 (Wed)   4 PM        Away      University of Chicago                Chicago, Ill. (Stagg Field)                                Postponed",
     "Oct 3 (Sat)    1 PM        Away      Elmhurst University                  Elmhurst, Ill. (Langhorst Field)                           W 2-1",
     "Oct 7 (Wed)    7 PM        Home      Millikin University                  Naperville, Ill. (Benedetti-Wehrli Stadium)                W 2-1",
-    "Oct 10 (Sat)   11 AM       Home      Carroll University                   Naperville, Ill. (Benedetti-Wehrli Stadium)",
+    "Oct 10 (Sat)   11 AM       Home      Carroll University                   Naperville, Ill. (Benedetti-Wehrli Stadium)                W 3-2",
     "Oct 14 (Wed)   7 PM        Away      North Park University                Chicago, Ill. (Holmgren Athletic Complex)",
     "Oct 17 (Sat)   5 PM        Away      Carthage College                     Kenosha, Wis. (Art Keller Field)",
     "Oct 21 (Wed)   7 PM        Home      Wheaton College (Ill.)               Naperville, Ill. (Benedetti-Wehrli Stadium)",
@@ -90,8 +90,8 @@
     },
     {
       "key": "Oct 10 (Sat) | Carroll University",
-      "row": "Oct 10 (Sat) | 11 AM | CCIW | * | vs | Carroll University | Partnered with: Sugar Steel | Watch | Naperville, Ill. | Benedetti-Wehrli Stadium",
-      "full": "Oct 10 (Sat) | 11 AM | CCIW | * | vs | Carroll University | Partnered with: Sugar Steel | Watch | Live Stats | Game Program | History | Naperville, Ill. | Benedetti-Wehrli Stadium | Naperville, Ill. | Benedetti-Wehrli Stadium | Watch | Live Stats | Game Program | History"
+      "row": "Oct 10 (Sat) | 11 AM | CCIW | * | vs | Carroll University | Partnered with: Sugar Steel | Naperville, Ill. | Benedetti-Wehrli Stadium | W, | 3-2",
+      "full": "Oct 10 (Sat) | 11 AM | CCIW | * | vs | Carroll University | Partnered with: Sugar Steel | Box Score | Naperville, Ill. | Benedetti-Wehrli Stadium | W, | 3-2 | Box Score | History | Hide/Show Additional Information For Carroll University - October 10, 2026"
     },
     {
       "key": "Oct 14 (Wed) | North Park University",
