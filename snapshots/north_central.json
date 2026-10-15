@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-10-14T12:10:36-05:00",
+  "fetched_at": "2026-10-14T23:38:48-05:00",
   "record": [
-    "Overall    10-0-1  .955",
-    "Conference 3-0-1  .875",
-    "Streak     W3",
+    "Overall    11-0-1  .958",
+    "Conference 4-0-1  .900",
+    "Streak     W4",
     "Home       7-0-1",
-    "Away       3-0",
+    "Away       4-0",
     "Neutral    0-0"
   ],
   "text_schedule": [
@@ -21,7 +21,7 @@
     "Oct 3 (Sat)    1 PM        Away      Elmhurst University                  Elmhurst, Ill. (Langhorst Field)                           W 2-1",
     "Oct 7 (Wed)    7 PM        Home      Millikin University                  Naperville, Ill. (Benedetti-Wehrli Stadium)                W 2-1",
     "Oct 10 (Sat)   11 AM       Home      Carroll University                   Naperville, Ill. (Benedetti-Wehrli Stadium)                W 3-2",
-    "Oct 14 (Wed)   7 PM        Away      North Park University                Chicago, Ill. (Holmgren Athletic Complex)",
+    "Oct 14 (Wed)   7 PM        Away      North Park University                Chicago, Ill. (Holmgren Athletic Complex)                  W 4-1",
     "Oct 17 (Sat)   5 PM        Away      Carthage College                     Kenosha, Wis. (Art Keller Field)",
     "Oct 21 (Wed)   7 PM        Home      Wheaton College (Ill.)               Naperville, Ill. (Benedetti-Wehrli Stadium)",
     "Oct 28 (Wed)   7 PM        Away      Augustana College (IL)               Rock Island, Ill. (Thorson-Lucken Field)",
@@ -95,8 +95,8 @@
     },
     {
       "key": "Oct 14 (Wed) | North Park University",
-      "row": "Oct 14 (Wed) | 7 PM | CCIW | * | at | North Park University | Watch | Chicago, Ill. | Holmgren Athletic Complex",
-      "full": "Oct 14 (Wed) | 7 PM | CCIW | * | at | North Park University | Watch | Live Stats | History | Chicago, Ill. | Holmgren Athletic Complex | Chicago, Ill. | Holmgren Athletic Complex | Watch | Live Stats | History"
+      "row": "Oct 14 (Wed) | 7 PM | CCIW | * | at | North Park University | Chicago, Ill. | Holmgren Athletic Complex | W, | 4-1",
+      "full": "Oct 14 (Wed) | 7 PM | CCIW | * | at | North Park University | Box Score | Recap | Chicago, Ill. | Holmgren Athletic Complex | W, | 4-1 | Box Score | Recap | History | Hide/Show Additional Information For North Park University - October 14, 2026"
     },
     {
       "key": "Oct 17 (Sat) | Carthage College",
