@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-10-17T10:34:33-05:00",
+  "fetched_at": "2026-10-17T23:33:47-05:00",
   "record": [
-    "Overall    9-1  .900",
-    "Conference 2-0  1.000",
-    "Streak     W3",
+    "Overall    10-1  .909",
+    "Conference 3-0  1.000",
+    "Streak     W4",
     "Home       5-0",
-    "Away       4-1",
+    "Away       5-1",
     "Neutral    0-0"
   ],
   "text_schedule": [
@@ -20,7 +20,7 @@
     "Sep 30 (Wed)   4 PM CT      Home   North Central (IL)     Chicago, IL | Stagg Grass Field",
     "Oct 3 (Sat)    8:30 PM ET   Away   New York University    Newark, NJ | Lubetkin Field at Malcolm Simon Stadium (NJIT)                W 1-0",
     "Oct 10 (Sat)   1:30 PM CT   Home   Carnegie Mellon        Chicago, IL | Stagg Grass Fields                                           W 2-1",
-    "Oct 17 (Sat)   1:30 PM ET   Away   Case Western Reserve   Cleveland, OH | DiSanto Field",
+    "Oct 17 (Sat)   1:30 PM ET   Away   Case Western Reserve   Cleveland, OH | DiSanto Field                                              W 4-0",
     "Oct 23 (Fri)   3 PM CT      Home   Emory                  Chicago, IL | Stagg Grass Fields",
     "Oct 25 (Sun)   1:30 PM CT   Home   Rochester              Chicago, IL | Stagg Grass Fields",
     "Oct 29 (Thu)   6 PM CT      Away   Illinois Tech          Chicago, IL |  Stuart Field",
@@ -85,8 +85,8 @@
     },
     {
       "key": "Oct 17 (Sat) | Case Western Reserve",
-      "row": "Oct 17 (Sat) | 1:30 PM ET | UAA | * | at | Case Western Reserve | Watch ($) | Cleveland, OH | DiSanto Field",
-      "full": "Oct 17 (Sat) | 1:30 PM ET | UAA | * | at | Case Western Reserve | Watch ($) | Live Stats | Preview | Game Notes | History | Cleveland, OH | DiSanto Field | Cleveland, OH | DiSanto Field | Watch ($) | Live Stats | Preview | Game Notes | History | Hide/Show Additional Information For Case Western Reserve - October 17, 2026"
+      "row": "Oct 17 (Sat) | 1:30 PM ET | UAA | * | at | Case Western Reserve | Cleveland, OH | DiSanto Field | W, | 4-0",
+      "full": "Oct 17 (Sat) | 1:30 PM ET | UAA | * | at | Case Western Reserve | Box Score | Recap | Game Notes | Cleveland, OH | DiSanto Field | W, | 4-0 | Box Score | Recap | Game Notes | History | Hide/Show Additional Information For Case Western Reserve - October 17, 2026"
     },
     {
       "key": "Oct 23 (Fri) | Emory",
