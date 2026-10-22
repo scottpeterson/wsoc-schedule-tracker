@@ -1,10 +1,10 @@
 {
-  "fetched_at": "2026-10-21T12:12:35-05:00",
+  "fetched_at": "2026-10-21T23:44:54-05:00",
   "record": [
-    "Overall    12-0-1  .962",
-    "Conference 5-0-1  .917",
-    "Streak     W5",
-    "Home       7-0-1",
+    "Overall    13-0-1  .964",
+    "Conference 6-0-1  .929",
+    "Streak     W6",
+    "Home       8-0-1",
     "Away       5-0",
     "Neutral    0-0"
   ],
@@ -23,7 +23,7 @@
     "Oct 10 (Sat)   11 AM       Home      Carroll University                   Naperville, Ill. (Benedetti-Wehrli Stadium)                W 3-2",
     "Oct 14 (Wed)   7 PM        Away      North Park University                Chicago, Ill. (Holmgren Athletic Complex)                  W 4-1",
     "Oct 17 (Sat)   5 PM        Away      Carthage College                     Kenosha, Wis. (Art Keller Field)                           W 4-2",
-    "Oct 21 (Wed)   7 PM        Home      Wheaton College (Ill.)               Naperville, Ill. (Benedetti-Wehrli Stadium)",
+    "Oct 21 (Wed)   7 PM        Home      Wheaton College (Ill.)               Naperville, Ill. (Benedetti-Wehrli Stadium)                W 3-1",
     "Oct 28 (Wed)   7 PM        Away      Augustana College (IL)               Rock Island, Ill. (Thorson-Lucken Field)",
     "Oct 31 (Sat)   TBA         Neutral   CCIW Tournament                      TBA",
     "Nov 4 (Wed)    TBA         Neutral   CCIW Tournament                      TBA",
@@ -105,8 +105,8 @@
     },
     {
       "key": "Oct 21 (Wed) | Wheaton College (Ill.)",
-      "row": "Oct 21 (Wed) | 7 PM | CCIW | * | vs | Wheaton College (Ill.) | Partnered with: Russel Martin Carpets | Watch | Naperville, Ill. | Benedetti-Wehrli Stadium",
-      "full": "Oct 21 (Wed) | 7 PM | CCIW | * | vs | Wheaton College (Ill.) | Partnered with: Russel Martin Carpets | Watch | Live Stats | Game Program | History | Naperville, Ill. | Benedetti-Wehrli Stadium | Naperville, Ill. | Benedetti-Wehrli Stadium | Watch | Live Stats | Game Program | History"
+      "row": "Oct 21 (Wed) | 7 PM | CCIW | * | vs | Wheaton College (Ill.) | Partnered with: Russel Martin Carpets | Naperville, Ill. | Benedetti-Wehrli Stadium | W, | 3-1",
+      "full": "Oct 21 (Wed) | 7 PM | CCIW | * | vs | Wheaton College (Ill.) | Partnered with: Russel Martin Carpets | Box Score | Recap | Naperville, Ill. | Benedetti-Wehrli Stadium | W, | 3-1 | Box Score | Recap | History | Hide/Show Additional Information For Wheaton College (Ill.) - October 21, 2026"
     },
     {
       "key": "Oct 28 (Wed) | Augustana College (IL)",
