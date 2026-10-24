@@ -1,10 +1,10 @@
 {
-  "fetched_at": "2026-10-23T12:07:04-05:00",
+  "fetched_at": "2026-10-23T23:36:13-05:00",
   "record": [
-    "Overall    10-1  .909",
-    "Conference 3-0  1.000",
-    "Streak     W4",
-    "Home       5-0",
+    "Overall    11-1  .917",
+    "Conference 4-0  1.000",
+    "Streak     W5",
+    "Home       6-0",
     "Away       5-1",
     "Neutral    0-0"
   ],
@@ -21,7 +21,7 @@
     "Oct 3 (Sat)    8:30 PM ET   Away   New York University    Newark, NJ | Lubetkin Field at Malcolm Simon Stadium (NJIT)                W 1-0",
     "Oct 10 (Sat)   1:30 PM CT   Home   Carnegie Mellon        Chicago, IL | Stagg Grass Fields                                           W 2-1",
     "Oct 17 (Sat)   1:30 PM ET   Away   Case Western Reserve   Cleveland, OH | DiSanto Field                                              W 4-0",
-    "Oct 23 (Fri)   3 PM CT      Home   Emory                  Chicago, IL | Stagg Grass Fields",
+    "Oct 23 (Fri)   3 PM CT      Home   Emory                  Chicago, IL | Stagg Grass Fields                                           W 2-0",
     "Oct 25 (Sun)   1:30 PM CT   Home   Rochester              Chicago, IL | Stagg Grass Fields",
     "Oct 29 (Thu)   6 PM CT      Away   Illinois Tech          Chicago, IL |  Stuart Field",
     "Oct 31 (Sat)   1:30 PM ET   Away   Brandeis               Waltham, MA |  Gordon Field",
@@ -90,8 +90,8 @@
     },
     {
       "key": "Oct 23 (Fri) | Emory",
-      "row": "Oct 23 (Fri) | 3 PM CT | UAA | * | vs | #21 | Emory | Pride Game | Watch ($) | Chicago, IL | Stagg Grass Fields",
-      "full": "Oct 23 (Fri) | 3 PM CT | UAA | * | vs | #21 | Emory | Pride Game | Watch ($) | Live Stats | Preview | Game Notes | History | Chicago, IL | Stagg Grass Fields | Chicago, IL | Stagg Grass Fields | Watch ($) | Live Stats | Preview | Game Notes | History | Hide/Show Additional Information For Emory - October 23, 2026"
+      "row": "Oct 23 (Fri) | 3 PM CT | UAA | * | vs | #21 | Emory | Pride Game | Chicago, IL | Stagg Grass Fields | W, | 2-0",
+      "full": "Oct 23 (Fri) | 3 PM CT | UAA | * | vs | #21 | Emory | Pride Game | Box Score | Recap | Game Notes | Chicago, IL | Stagg Grass Fields | W, | 2-0 | Box Score | Recap | Game Notes | History | Hide/Show Additional Information For Emory - October 23, 2026"
     },
     {
       "key": "Oct 25 (Sun) | Rochester",
