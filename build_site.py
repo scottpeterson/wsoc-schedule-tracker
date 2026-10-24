@@ -1,8 +1,8 @@
 #!/opt/homebrew/bin/python3
 """
-Build site/index.html from the tracker's snapshots, changes.jsonl,
-manual_sources.json, and content/story.html. run_hourly.sh runs this after
-check_schedules.py.
+Build docs/index.html from the tracker's snapshots, changes.jsonl,
+manual_sources.json, and content/story.html. GitHub Actions runs this after
+check_schedules.py. Without a remote, run_hourly.sh does the same on the Mac.
 """
 
 import html
@@ -66,7 +66,7 @@ document.querySelectorAll('.th').forEach(b=>b.addEventListener('click',()=>{root
 matchMedia('(prefers-color-scheme:dark)').addEventListener('change',paintTheme);
 paintTheme();
 })();
-// Sortable tables: click a header to sort by that column; click again to reverse.
+// Sortable tables. Click a header to sort by that column. Click again to reverse.
 (function(){
 function cellKey(td){if(!td)return '';const t=td.querySelector('time[datetime]');const raw=td.dataset.sort!==undefined?td.dataset.sort:t?t.getAttribute('datetime'):td.textContent.trim();const n=parseFloat(String(raw).replace(/[,%#$]/g,''));return isNaN(n)||!/^[-+#$]?[\d.,]+%?$/.test(String(raw).replace(/\s/g,''))?String(raw).toLowerCase():n;}
 document.querySelectorAll('table').forEach(t=>{
@@ -263,12 +263,12 @@ def main():
 <meta name="theme-color" content="#faf7f4" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#161312" media="(prefers-color-scheme: dark)">
 <title>Chicago and North Central Kerfuffle</title>
-<meta name="description" content="How UChicago, North Central (IL), and the NCAA list the September 30, 2026 women's soccer game that was not played, updated twice a day.">
+<meta name="description" content="How UChicago, North Central (IL), and the NCAA list the September 30, 2026 women's soccer game the teams did not play. Updated twice a day.">
 <link rel="icon" href="assets/uchicago.png">
 <script data-goatcounter="https://chicagoandnorthcentralkerfuffle.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <style>{CSS}</style></head><body><main>
 <div class="top"><div><h1>The Chicago and North Central Kerfuffle</h1>
-<p class="sub">The September 30, 2026 women's soccer game between UChicago and North Central (IL) was not played. UChicago lists it as a forfeit. North Central lists it as postponed. The NCAA lists it as canceled. This page tracks both schools' schedule listings and records every change, updated twice a day.</p></div>
+<p class="sub">UChicago and North Central (IL) did not play their September 30, 2026 women's soccer game. UChicago lists it as a forfeit. North Central lists it as postponed. The NCAA lists it as canceled. This page checks both schools' schedule pages twice a day and records every change.</p></div>
 <div class="ctl"><span class="seglabel" id="lbl-theme">Theme</span><div class="seg" role="group" aria-labelledby="lbl-theme"><button type="button" class="th" data-theme="light">Light</button><button type="button" class="th" data-theme="dark">Dark</button></div></div></div>
 <h2 id="now">Current listings</h2>
 <div class="cards">
@@ -277,7 +277,7 @@ def main():
 </div>
 {story}
 <h2 id="changes">Change log</h2>
-<p class="small">Every change to either schedule listing, newest first.</p>
+<p class="small">Every change to either school's schedule page, newest first.</p>
 {change_log_html()}
 <section class="musings">
 <h2 id="musings">Scott's Musings</h2>
@@ -291,9 +291,9 @@ def main():
 </section>
 <section class="more">
 <h2 id="more">More Division III numbers</h2>
-<p>This page is a side project of <a href="https://thed3statlab.com/">The D3 Stat Lab</a>, an independent Division III women's basketball analytics site. It publishes NPI rankings, season simulations with tournament odds, composite ratings, and conference rankings through the season. If the NPI angle in this story interests you, that is where the metric is explained and tracked.</p>
+<p>This page is a side project of <a href="https://thed3statlab.com/">The D3 Stat Lab</a>, an independent Division III women's basketball analytics site. It publishes NCAA Power Index (NPI) rankings, season simulations with tournament odds, composite ratings, and conference rankings through the season. If the NPI angle in this story interests you, that site explains and tracks the metric.</p>
 </section>
-<footer>Built {esc(built)} Central. Not affiliated with either school, the CCIW, the UAA, or the NCAA. Schedule data comes from the schools' public schedule pages. Quotes come from the linked public posts. Logos belong to their schools.</footer>
+<footer>Built {esc(built)} Central. This site is not affiliated with either school, the CCIW, the UAA, or the NCAA. Schedule data comes from the schools' public schedule pages. Quotes come from the linked public posts. Logos belong to their schools.</footer>
 </main><script>{JS}</script></body></html>
 """
     # Every external link opens in a new tab, including the ones inside content/story.html.

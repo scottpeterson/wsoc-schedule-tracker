@@ -2,18 +2,19 @@
 """
 Women's soccer schedule change tracker.
 
-Fetches each school's Sidearm schedule page plus its plain-text schedule
-feed, normalizes every game into a row, and compares the result with the
-last snapshot. When anything changes it appends the diff to changes.log,
-rewrites latest_changes.md, and fires a macOS notification.
+The tracker fetches each school's Sidearm schedule page and its text feed.
+It normalizes every game into a row and compares the result with the last
+snapshot. When anything changes, it appends the diff to changes.log,
+rewrites latest_changes.md, and sends a macOS notification.
 
 Run it by hand:   ./check_schedules.py
-Run it hourly:    launchd agent com.scottpeterson.wsoc-schedule-tracker
+Scheduled runs:   GitHub Actions, twice a day (.github/workflows/track.yml).
+                  Without a remote, run_hourly.sh runs it from launchd instead.
 Add a school:     edit schools.json (slug, name, schedule_url, text_url)
 
 The text feed URL is the "Text" link on any Sidearm schedule page
-(/services/schedule_txt.ashx?schedule=<id>). Standard library only, so it
-runs with the Homebrew python3 and needs no virtualenv.
+(/services/schedule_txt.ashx?schedule=<id>). The script uses the standard
+library only, so it runs with the Homebrew python3 and needs no virtualenv.
 """
 
 import difflib
@@ -52,7 +53,7 @@ USER_AGENT = (
 )
 TIMEOUT_SECONDS = 30
 
-# Tokens that are link labels or UI chrome, not schedule facts.
+# Link labels and UI chrome. The parser drops these tokens because they carry no schedule fact.
 NOISE_PATTERNS = [
     r"^Recap$", r"^History$", r"^Box ?Score$", r"^Stats$", r"^Live Stats$",
     r"^Photos$", r"^Video$", r"^Audio$", r"^Tickets$", r"^Game Notes$",
@@ -68,7 +69,7 @@ def log(message):
 
 
 def notify(message, title):
-    """macOS notification. A no-op where osascript does not exist (GitHub Actions)."""
+    """Send a macOS notification. Does nothing where osascript is absent (GitHub Actions)."""
     if shutil.which("osascript") is None:
         return
     def esc(text):
@@ -135,8 +136,9 @@ def parse_games(page_html):
 
 
 def opponent_from(tokens):
-    """Opponent name: first real token after the vs/at marker, or the first
-    non-date, non-time token for tournament placeholders."""
+    """Return the opponent name. Normally it is the first real token after the
+    vs/at marker. For tournament placeholders it is the first token that is
+    neither a date nor a time."""
     skip = re.compile(r"^(#\d+|RV|No\. ?\d+|\*|[A-Z]{2,6})$")
     time_re = re.compile(r"^(\d{1,2}(:\d{2})? ?(AM|PM|a\.m\.|p\.m\.)( ?\(?[A-Z]{2,3}\)?)?|TBA|TBD)$")
     date_re = re.compile(r"^[A-Z][a-z]{2} \d{1,2} \(")

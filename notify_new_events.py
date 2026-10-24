@@ -1,9 +1,9 @@
 #!/opt/homebrew/bin/python3
 """
-Send one macOS notification per change event in changes.jsonl that has not
-been announced on this machine yet. Works no matter which runner (this Mac
-or GitHub Actions) detected the change, because run_hourly.sh pulls the repo
-before calling this. Progress is kept in .notified_through (untracked).
+Send one macOS notification for each change event in changes.jsonl that the
+Mac did not announce yet. It works whichever runner detected the change, the
+Mac or GitHub Actions, because run_hourly.sh pulls the repo first. The script
+keeps its progress in .notified_through (untracked).
 """
 
 import json
