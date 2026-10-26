@@ -1,10 +1,10 @@
 {
-  "fetched_at": "2026-10-25T11:18:49-05:00",
+  "fetched_at": "2026-10-25T23:46:57-05:00",
   "record": [
-    "Overall    11-1  .917",
-    "Conference 4-0  1.000",
-    "Streak     W5",
-    "Home       6-0",
+    "Overall    11-1-1  .885",
+    "Conference 4-0-1  .900",
+    "Streak     T1",
+    "Home       6-0-1",
     "Away       5-1",
     "Neutral    0-0"
   ],
@@ -22,7 +22,7 @@
     "Oct 10 (Sat)   1:30 PM CT   Home   Carnegie Mellon        Chicago, IL | Stagg Grass Fields                                           W 2-1",
     "Oct 17 (Sat)   1:30 PM ET   Away   Case Western Reserve   Cleveland, OH | DiSanto Field                                              W 4-0",
     "Oct 23 (Fri)   3 PM CT      Home   Emory                  Chicago, IL | Stagg Grass Fields                                           W 2-0",
-    "Oct 25 (Sun)   1:30 PM CT   Home   Rochester              Chicago, IL | Stagg Grass Fields",
+    "Oct 25 (Sun)   1:30 PM CT   Home   Rochester              Chicago, IL | Stagg Grass Fields                                           T 0-0",
     "Oct 29 (Thu)   6 PM CT      Away   Illinois Tech          Chicago, IL |  Stuart Field",
     "Oct 31 (Sat)   1:30 PM ET   Away   Brandeis               Waltham, MA |  Gordon Field",
     "Nov 7 (Sat)    2 PM CT      Home   WashU                  Chicago, IL | Stagg Grass Fields"
@@ -95,8 +95,8 @@
     },
     {
       "key": "Oct 25 (Sun) | Rochester",
-      "row": "Oct 25 (Sun) | 1:30 PM CT | UAA | * | vs | #23 | Rochester | Breast Cancer Awareness Game | Watch ($) | Chicago, IL | Stagg Grass Fields",
-      "full": "Oct 25 (Sun) | 1:30 PM CT | UAA | * | vs | #23 | Rochester | Breast Cancer Awareness Game | Watch ($) | Live Stats | Game Notes | History | Chicago, IL | Stagg Grass Fields | Chicago, IL | Stagg Grass Fields | Watch ($) | Live Stats | Game Notes | History"
+      "row": "Oct 25 (Sun) | 1:30 PM CT | UAA | * | vs | #23 | Rochester | Breast Cancer Awareness Game | Chicago, IL | Stagg Grass Fields | T, | 0-0",
+      "full": "Oct 25 (Sun) | 1:30 PM CT | UAA | * | vs | #23 | Rochester | Breast Cancer Awareness Game | Box Score | Recap | Game Notes | Chicago, IL | Stagg Grass Fields | T, | 0-0 | Box Score | Recap | Game Notes | History | Hide/Show Additional Information For Rochester - October 25, 2026"
     },
     {
       "key": "Oct 29 (Thu) | Illinois Tech",
