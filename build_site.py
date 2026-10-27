@@ -263,12 +263,12 @@ def main():
 <meta name="theme-color" content="#faf7f4" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#161312" media="(prefers-color-scheme: dark)">
 <title>Chicago and North Central Kerfuffle</title>
-<meta name="description" content="How UChicago, North Central (IL), and the NCAA list the September 30, 2026 women's soccer game the teams did not play. Updated twice a day.">
+<meta name="description" content="How UChicago, North Central (IL), and the NCAA list the September 30, 2026 women's soccer game the teams did not play. Updated about every 10 days.">
 <link rel="icon" href="assets/uchicago.png">
 <script data-goatcounter="https://chicagoandnorthcentralkerfuffle.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <style>{CSS}</style></head><body><main>
 <div class="top"><div><h1>The Chicago and North Central Kerfuffle</h1>
-<p class="sub">UChicago and North Central (IL) did not play their September 30, 2026 women's soccer game. UChicago lists it as a forfeit. North Central lists it as postponed. The NCAA lists it as canceled. This page checks both schools' schedule pages twice a day and records every change.</p></div>
+<p class="sub">UChicago and North Central (IL) did not play their September 30, 2026 women's soccer game. UChicago lists it as a forfeit. North Central lists it as postponed. The NCAA lists it as canceled. This page checks both schools' schedule pages about every 10 days and records every change.</p></div>
 <div class="ctl"><span class="seglabel" id="lbl-theme">Theme</span><div class="seg" role="group" aria-labelledby="lbl-theme"><button type="button" class="th" data-theme="light">Light</button><button type="button" class="th" data-theme="dark">Dark</button></div></div></div>
 <h2 id="now">Current listings</h2>
 <div class="cards">

@@ -2,7 +2,7 @@ name: Schedule check
 
 on:
   schedule:
-    - cron: "17 0,12 * * *"   # twice a day at 00:17 and 12:17 UTC (7:17 PM and 7:17 AM Central during daylight time); GitHub often runs scheduled jobs late
+    - cron: "17 12 1,11,21 * *"   # about every 10 days: the 1st, 11th, and 21st at 12:17 UTC (7:17 AM Central during daylight time); GitHub often runs scheduled jobs late
   workflow_dispatch:
 
 permissions:
