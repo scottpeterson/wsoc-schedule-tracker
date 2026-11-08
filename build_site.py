@@ -25,33 +25,39 @@ GAME_DATE_TOKEN = "Sep 30 (Wed)"
 FIELD_ORDER = ["Date", "Time", "Home or away", "Opponent", "Location", "Status", "Note"]
 
 CSS = """
-:root{color-scheme:light;--bg:#faf7f4;--fg:#1d1d1b;--muted:#5d5d58;--card:#ffffff;--line:#e3dcd7;--gray:#ebe8e4;--link:#1c5d99;--accent:#1c5d99;--ncaa:#0a4f8f;--c-north_central:#c30202;--c-uchicago:#880000}
-:root[data-theme="dark"]{color-scheme:dark;--bg:#161312;--fg:#ecece6;--muted:#a3a39b;--card:#221c1b;--line:#3a302e;--gray:#2a2524;--link:#7fb3e6;--accent:#7fb3e6;--ncaa:#6fa8dc;--c-north_central:#ff7a7a;--c-uchicago:#f29b9b}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#161312;--fg:#ecece6;--muted:#a3a39b;--card:#221c1b;--line:#3a302e;--gray:#2a2524;--link:#7fb3e6;--accent:#7fb3e6;--ncaa:#6fa8dc;--c-north_central:#ff7a7a;--c-uchicago:#f29b9b}}
+/* Brand layer: IBM Plex type, type scale, control size.
+   Source: ~/.claude/skills/design/assets/brand.css (version 2026-11-08). Rules: references/brand.md. */
+:root{--font-sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--font-mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;--fs-caption:.75rem;--fs-small:.875rem;--fs-body:1rem;--fs-h3:1.25rem;--fs-h2:1.5rem;--fs-h1:2rem;--control-h:36px;--control-gap:8px}
+:root{color-scheme:light;--bg:#faf7f4;--fg:#1d1d1b;--muted:#5d5d58;--card:#ffffff;--line:#e3dcd7;--gray:#ebe8e4;--link:#1c5d99;--accent:#1c5d99;--ncaa:#0a4f8f;--ncaa-fill:#0a4f8f;--shadow:0 1px 2px rgba(29,29,27,.06),0 2px 8px rgba(29,29,27,.08);--c-north_central:#c30202;--c-uchicago:#880000}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#161312;--fg:#ecece6;--muted:#a3a39b;--card:#221c1b;--line:#3a302e;--gray:#2a2524;--link:#7fb3e6;--accent:#7fb3e6;--ncaa:#6fa8dc;--ncaa-fill:#1d5a94;--shadow:0 1px 2px rgba(0,0,0,.4),0 2px 8px rgba(0,0,0,.35);--c-north_central:#ff7a7a;--c-uchicago:#f29b9b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#161312;--fg:#ecece6;--muted:#a3a39b;--card:#221c1b;--line:#3a302e;--gray:#2a2524;--link:#7fb3e6;--accent:#7fb3e6;--ncaa:#6fa8dc;--ncaa-fill:#1d5a94;--shadow:0 1px 2px rgba(0,0,0,.4),0 2px 8px rgba(0,0,0,.35);--c-north_central:#ff7a7a;--c-uchicago:#f29b9b}}
 .top{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:12px 24px}.top>div:first-child{flex:1 1 520px}
-.ctl{display:flex;flex-direction:column;gap:4px}.seglabel{font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-left:2px}
-.seg{display:inline-flex;align-items:stretch;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card)}.seg button{border:0;background:transparent;color:var(--muted);padding:9px 14px;font:inherit;font-size:.95rem;cursor:pointer;min-width:44px}.seg button+button{border-left:1px solid var(--line)}
-.seg button.active{background:var(--accent);color:#fff;font-weight:700}.seg button.active::before{content:"\\2713\\00a0"}:root[data-theme="dark"] .seg button.active{color:#161312}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .seg button.active{color:#161312}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-main{max-width:900px;margin:0 auto;padding:24px 16px 64px}h1{font-size:2rem;line-height:1.15;margin:.2em 0}h2{margin-top:2em;border-bottom:1px solid var(--line);padding-bottom:.25em}
+.ctl{display:flex;flex-direction:column;gap:4px}.seglabel{font-size:var(--fs-caption);font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-left:2px}
+.seg{display:inline-flex;align-items:stretch;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card)}.seg button{border:0;background:transparent;color:var(--muted);height:var(--control-h);padding:0 14px;font:inherit;font-size:var(--fs-body);cursor:pointer;min-width:44px}.seg button+button{border-left:1px solid var(--line)}
+.seg button.active{background:var(--accent);color:#fff;font-weight:600}.seg button.active::before{content:"\\2713\\00a0"}:root[data-theme="dark"] .seg button.active{color:#161312}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .seg button.active{color:#161312}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:400 var(--fs-body)/1.5 var(--font-sans)}
+code,kbd,samp,pre{font-family:var(--font-mono);font-weight:400}:not(pre)>code{font-size:.875em}
+h1,h2,h3,h4,strong,b,th{font-weight:600}h1,h2{letter-spacing:-.01em}button{font:inherit}
+main{max-width:900px;margin:0 auto;padding:24px 16px 64px}h1{font-size:var(--fs-h1);line-height:1.15;margin:.2em 0}h2{font-size:var(--fs-h2);margin-top:2em;border-bottom:1px solid var(--line);padding-bottom:.25em}
 p.sub{color:var(--muted);margin-bottom:1.5em}a{color:var(--link)}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
 .card header{display:flex;align-items:center;gap:12px;padding:12px 16px;color:#fff}
 .card header img{width:44px;height:44px;object-fit:contain;background:#fff;border-radius:50%;padding:4px}
-.card header .who{font-weight:700;font-size:1.05rem;line-height:1.2}.card header .what{font-size:.85rem;opacity:.9}
-.card .body{padding:14px 16px 16px}.status{font-size:1.5rem;font-weight:800;margin:0 0 .5em}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:4px 14px;margin:0;font-size:.95rem}dt{color:var(--muted)}dd{margin:0}
-.meta{color:var(--muted);font-size:.85rem;margin-top:.9em}
-table{border-collapse:collapse;width:100%;margin:.6em 0 1.2em;font-size:.95rem}
+.card header .who{font-weight:600;font-size:var(--fs-body);line-height:1.25}.card header .what{font-size:var(--fs-small)}
+.card .body{padding:14px 16px 16px}.status{font-size:var(--fs-h2);font-weight:600;line-height:1.25;margin:0 0 .5em}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:4px 14px;margin:0;font-size:var(--fs-body)}dt{color:var(--muted)}dd{margin:0}
+.meta{color:var(--muted);font-size:var(--fs-small);margin-top:.9em}
+table{border-collapse:collapse;width:100%;margin:.6em 0 1.2em;font-size:var(--fs-body)}
 th,td{border-bottom:1px solid var(--line);padding:7px 10px;text-align:center;vertical-align:top}th:first-child,td:first-child{text-align:left}
+table.textcols th,table.textcols td{text-align:left}
 ul{padding-left:1.2em}li{margin:.35em 0}.timeline li{margin:.7em 0}.timeline time{font-weight:600}
-.rules h3{margin:1.5em 0 .3em;font-size:1.05rem}blockquote{margin:.6em 0;padding:.5em 1em;border:1px solid var(--line);background:var(--card);border-radius:8px}blockquote p{margin:.4em 0}
-.event{margin:1.2em 0}.event h3{margin:0 0 .3em;font-size:1rem}.small{color:var(--muted);font-size:.9rem}
-.musings{margin-top:3em;padding:18px 20px;border-radius:12px;background:var(--gray)}.musings h2{margin:0 0 .3em;border:0;padding:0;font-size:1.15rem}.musings .note{margin:0 0 .9em;font-size:.9rem;font-weight:600;color:var(--muted)}.musings blockquote{margin:0;padding:0;border:0;background:none;font-style:italic}.musings blockquote p{margin:.6em 0}
-.more{margin-top:3em;padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:var(--card)}.more h2{margin:0 0 .4em;border:0;padding:0;font-size:1.15rem}.more p{margin:0}
+.rules h3{margin:1.5em 0 .3em;font-size:var(--fs-h3)}blockquote{margin:.6em 0;padding:.5em 1em;border:1px solid var(--line);background:var(--card);border-radius:8px;box-shadow:var(--shadow)}blockquote p{margin:.4em 0}
+.event{margin:1.2em 0}.event h3{margin:0 0 .3em;font-size:var(--fs-body)}.small{color:var(--muted);font-size:var(--fs-small)}
+.musings{margin-top:3em;padding:18px 20px;border-radius:12px;background:var(--gray);box-shadow:var(--shadow)}.musings h2{margin:0 0 .3em;border:0;padding:0;font-size:var(--fs-h3)}.musings .note{margin:0 0 .9em;font-size:var(--fs-small);font-weight:600;color:var(--muted)}.musings blockquote{margin:0;padding:0;border:0;background:none;box-shadow:none;font-style:italic}.musings blockquote p{margin:.6em 0}
+.more{margin-top:3em;padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:var(--card);box-shadow:var(--shadow)}.more h2{margin:0 0 .4em;border:0;padding:0;font-size:var(--fs-h3)}.more p{margin:0}
 p.detail{margin:0 0 .5em}
-footer{margin-top:2em;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:1em}
+footer{margin-top:2em;color:var(--muted);font-size:var(--fs-caption);border-top:1px solid var(--line);padding-top:1em}
 thead th[aria-sort]{cursor:pointer;user-select:none}thead th[aria-sort]::after{content:"";display:inline-block;width:.9em;color:var(--faint,var(--muted))}thead th[aria-sort="ascending"]::after{content:"\\25B4"}thead th[aria-sort="descending"]::after{content:"\\25BE"}
 """
 
@@ -187,7 +193,7 @@ def manual_cards():
     cards = []
     for src in json.loads(MANUAL.read_text()):
         cards.append(
-            f'<div class="card"><header style="background:var(--ncaa)">'
+            f'<div class="card"><header style="background:var(--ncaa-fill);color:#fff">'
             f'<div><div class="who">{esc(src["name"])}</div><div class="what">Official scoreboard</div></div></header>'
             f'<div class="body"><p class="status" style="color:var(--ncaa)">{esc(src["status"])}</p>'
             f'<p class="detail">{esc(src["detail"])}</p>'
@@ -204,7 +210,7 @@ def diff_table(old_fields, new_fields):
             rows.append(f"<tr><td>{esc(name)}</td><td>{esc(before) or '&mdash;'}</td><td>{esc(after) or '&mdash;'}</td></tr>")
     if not rows:
         return "<p class=\"small\">Only expanded details changed.</p>"
-    return "<table><thead><tr><th>Field</th><th>Before</th><th>After</th></tr></thead><tbody>" + "".join(rows) + "</tbody></table>"
+    return "<table class=\"textcols\"><thead><tr><th>Field</th><th>Before</th><th>After</th></tr></thead><tbody>" + "".join(rows) + "</tbody></table>"
 
 
 def record_table(old, new):
@@ -216,7 +222,7 @@ def record_table(old, new):
         name, _, value = re.sub(r"\s+", " ", line).partition(" ")
         pairs.setdefault(name, ["", ""])[1] = value
     rows = [f"<tr><td>{esc(k)}</td><td>{esc(v[0])}</td><td>{esc(v[1])}</td></tr>" for k, v in pairs.items() if v[0] != v[1]]
-    return "<table><thead><tr><th>Record line</th><th>Before</th><th>After</th></tr></thead><tbody>" + "".join(rows) + "</tbody></table>"
+    return "<table class=\"textcols\"><thead><tr><th>Record line</th><th>Before</th><th>After</th></tr></thead><tbody>" + "".join(rows) + "</tbody></table>"
 
 
 def change_log_html():
@@ -266,6 +272,8 @@ def main():
 <meta name="description" content="How UChicago, North Central (IL), and the NCAA list the September 30, 2026 women's soccer game the teams did not play. Updated about every 10 days.">
 <link rel="icon" href="assets/uchicago.png">
 <script data-goatcounter="https://chicagoandnorthcentralkerfuffle.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
 <style>{CSS}</style></head><body><main>
 <div class="top"><div><h1>The Chicago and North Central Kerfuffle</h1>
 <p class="sub">UChicago and North Central (IL) did not play their September 30, 2026 women's soccer game. UChicago lists it as a forfeit. North Central lists it as postponed. The NCAA lists it as canceled. This page checks both schools' schedule pages about every 10 days and records every change.</p></div>
