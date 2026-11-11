@@ -1,10 +1,10 @@
 {
-  "fetched_at": "2026-11-01T11:56:58-06:00",
+  "fetched_at": "2026-11-11T13:40:13-06:00",
   "record": [
-    "Overall    14-0-1  .967",
+    "Overall    15-0-2  .941",
     "Conference 7-0-1  .938",
-    "Streak     W7",
-    "Home       8-0-1",
+    "Streak     T1",
+    "Home       9-0-2",
     "Away       6-0",
     "Neutral    0-0"
   ],
@@ -25,9 +25,11 @@
     "Oct 17 (Sat)   5 PM        Away      Carthage College                     Kenosha, Wis. (Art Keller Field)                           W 4-2",
     "Oct 21 (Wed)   7 PM        Home      Wheaton College (Ill.)               Naperville, Ill. (Benedetti-Wehrli Stadium)                W 3-1",
     "Oct 28 (Wed)   7 PM        Away      Augustana College (IL)               Rock Island, Ill. (Thorson-Lucken Field)                   W 3-0",
-    "Nov 4 (Wed)    7:30 PM     Home      CCIW Tournament                      Naperville, Ill. (Benedetti-Wehrli Stadium)",
-    "Nov 7 (Sat)    TBA         Neutral   CCIW Tournament                      TBA",
-    "Nov 13 (Fri)   TBA         Neutral   NCAA Tournament                      TBA",
+    "Nov 4 (Wed)    7:30 PM     Home      Wheaton College (Ill.)               Naperville, Ill. (Benedetti-Wehrli Stadium)                W 3-0",
+    "Nov 7 (Sat)    1 PM        Home      Elmhurst University                  Naperville, Ill. (Benedetti-Wehrli Stadium)                T 1-1",
+    "Nov 14 (Sat)   5 PM        Home      Webster University                   Naperville, Ill. (Benedetti-Wehrli Stadium)",
+    "Nov 14 (Sat)   7:30 PM     Home      Denison vs Cal Lutheran              Naperville, Ill. (Benedetti-Wehrli Stadium)",
+    "Nov 15 (Sun)   7 PM        Home      NCAA Tournament                      Naperville, Ill. (Benedetti-Wehrli Stadium)",
     "Nov 20 (Fri)   TBA         Neutral   NCAA Tournament                      TBA",
     "Dec 4 (Fri)    TBA         Neutral   NCAA Tournament                      TBA"
   ],
@@ -113,19 +115,29 @@
       "full": "Oct 28 (Wed) | 7 PM | CCIW | * | at | Augustana College (IL) | Box Score | Recap | Rock Island, Ill. | Thorson-Lucken Field | W, | 3-0 | Box Score | Recap | History | Hide/Show Additional Information For Augustana College (IL) - October 28, 2026 | CCIW Tournament"
     },
     {
-      "key": "Nov 4 (Wed) | CCIW Tournament",
-      "row": "Nov 4 (Wed) | 7:30 PM | vs | CCIW Tournament | CCIW Tournament Semifinal | Tournament Homepage | Naperville, Ill. | Benedetti-Wehrli Stadium",
-      "full": "Nov 4 (Wed) | 7:30 PM | vs | CCIW Tournament | CCIW Tournament Semifinal | Live Stats | Tournament Homepage | History | Naperville, Ill. | Benedetti-Wehrli Stadium | Naperville, Ill. | Benedetti-Wehrli Stadium | Live Stats | Tournament Homepage | History"
+      "key": "Nov 4 (Wed) | Wheaton College (Ill.)",
+      "row": "Nov 4 (Wed) | 7:30 PM | vs | Wheaton College (Ill.) | CCIW Tournament Semifinal | Tournament Homepage | Naperville, Ill. | Benedetti-Wehrli Stadium | W, | 3-0",
+      "full": "Nov 4 (Wed) | 7:30 PM | vs | Wheaton College (Ill.) | CCIW Tournament Semifinal | Box Score | Recap | Tournament Homepage | Naperville, Ill. | Benedetti-Wehrli Stadium | W, | 3-0 | Box Score | Recap | Tournament Homepage | History | Hide/Show Additional Information For Wheaton College (Ill.) - November 4, 2026"
     },
     {
-      "key": "Nov 7 (Sat) | CCIW Tournament",
-      "row": "Nov 7 (Sat) | TBA | CCIW Tournament | CCIW Tournament Championship | Tournament Homepage | NCAA Tournament",
-      "full": "Nov 7 (Sat) | TBA | CCIW Tournament | CCIW Tournament Championship | Tournament Homepage | History | TBA | Tournament Homepage | History | NCAA Tournament"
+      "key": "Nov 7 (Sat) | Elmhurst University",
+      "row": "Nov 7 (Sat) | 1 PM | vs | Elmhurst University | CCIW Tournament Championship | Tournament Homepage | Naperville, Ill. | Benedetti-Wehrli Stadium | T, | 1-1 | (ELM Wins on PKs 4-3)",
+      "full": "Nov 7 (Sat) | 1 PM | vs | Elmhurst University | CCIW Tournament Championship | Box Score | Recap | Tournament Homepage | Naperville, Ill. | Benedetti-Wehrli Stadium | T, | 1-1 | (ELM Wins on PKs 4-3) | Box Score | Recap | Tournament Homepage | History | Hide/Show Additional Information For Elmhurst University - November 7, 2026 | NCAA Tournament"
     },
     {
-      "key": "Nov 13 (Fri) | NCAA Tournament",
-      "row": "Nov 13 (Fri) | Nov 15 (Sun) | TBA | NCAA Tournament | NCAA First and Second Round",
-      "full": "Nov 13 (Fri) | Nov 15 (Sun) | TBA | NCAA Tournament | NCAA First and Second Round | History | TBA | History"
+      "key": "Nov 14 (Sat) | Webster University",
+      "row": "Nov 14 (Sat) | 5 PM | vs | Webster University | NCAA First Round | Watch | Bracket | Naperville, Ill. | Benedetti-Wehrli Stadium",
+      "full": "Nov 14 (Sat) | 5 PM | vs | Webster University | NCAA First Round | Watch | Live Stats | Bracket | History | Naperville, Ill. | Benedetti-Wehrli Stadium | Naperville, Ill. | Benedetti-Wehrli Stadium | Watch | Live Stats | Bracket | History"
+    },
+    {
+      "key": "Nov 14 (Sat) | Denison vs Cal Lutheran",
+      "row": "Nov 14 (Sat) | 7:30 PM | vs | Denison vs Cal Lutheran | NCAA First Round | Watch | Bracket | Naperville, Ill. | Benedetti-Wehrli Stadium",
+      "full": "Nov 14 (Sat) | 7:30 PM | vs | Denison vs Cal Lutheran | NCAA First Round | Watch | Live Stats | Bracket | History | Naperville, Ill. | Benedetti-Wehrli Stadium | Naperville, Ill. | Benedetti-Wehrli Stadium | Watch | Live Stats | Bracket | History"
+    },
+    {
+      "key": "Nov 15 (Sun) | NCAA Tournament",
+      "row": "Nov 15 (Sun) | 7 PM | vs | NCAA Tournament | NCAA Second Round | Bracket | Naperville, Ill. | Benedetti-Wehrli Stadium",
+      "full": "Nov 15 (Sun) | 7 PM | vs | NCAA Tournament | NCAA Second Round | Live Stats | Bracket | History | Naperville, Ill. | Benedetti-Wehrli Stadium | Naperville, Ill. | Benedetti-Wehrli Stadium | Live Stats | Bracket | History"
     },
     {
       "key": "Nov 20 (Fri) | NCAA Tournament",
