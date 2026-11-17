@@ -32,7 +32,7 @@ CSS = """
 :root[data-theme="dark"]{color-scheme:dark;--bg:#161312;--fg:#ecece6;--muted:#a3a39b;--card:#221c1b;--line:#3a302e;--gray:#2a2524;--link:#7fb3e6;--accent:#7fb3e6;--ncaa:#6fa8dc;--ncaa-fill:#1d5a94;--shadow:0 1px 2px rgba(0,0,0,.4),0 2px 8px rgba(0,0,0,.35);--c-north_central:#ff7a7a;--c-uchicago:#f29b9b}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#161312;--fg:#ecece6;--muted:#a3a39b;--card:#221c1b;--line:#3a302e;--gray:#2a2524;--link:#7fb3e6;--accent:#7fb3e6;--ncaa:#6fa8dc;--ncaa-fill:#1d5a94;--shadow:0 1px 2px rgba(0,0,0,.4),0 2px 8px rgba(0,0,0,.35);--c-north_central:#ff7a7a;--c-uchicago:#f29b9b}}
 .top{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:12px 24px}.top>div:first-child{flex:1 1 520px}
-.ctl{display:flex;flex-direction:column;gap:4px}.seglabel{font-size:var(--fs-caption);font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-left:2px}
+.ctl{display:flex;flex-direction:column;gap:4px}.seglabel{font-size:var(--fs-caption);font-weight:500;color:var(--muted);padding-left:2px}
 .seg{display:inline-flex;align-items:stretch;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card)}.seg button{border:0;background:transparent;color:var(--muted);height:var(--control-h);padding:0 14px;font:inherit;font-size:var(--fs-body);cursor:pointer;min-width:44px}.seg button+button{border-left:1px solid var(--line)}
 .seg button.active{background:var(--accent);color:#fff;font-weight:600}.seg button.active::before{content:"\\2713\\00a0"}:root[data-theme="dark"] .seg button.active{color:#161312}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .seg button.active{color:#161312}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:400 var(--fs-body)/1.5 var(--font-sans)}
@@ -49,8 +49,7 @@ p.sub{color:var(--muted);margin-bottom:1.5em}a{color:var(--link)}
 dl{display:grid;grid-template-columns:max-content 1fr;gap:4px 14px;margin:0;font-size:var(--fs-body)}dt{color:var(--muted)}dd{margin:0}
 .meta{color:var(--muted);font-size:var(--fs-small);margin-top:.9em}
 table{border-collapse:collapse;width:100%;margin:.6em 0 1.2em;font-size:var(--fs-body)}
-th,td{border-bottom:1px solid var(--line);padding:7px 10px;text-align:center;vertical-align:top}th:first-child,td:first-child{text-align:left}
-table.textcols th,table.textcols td{text-align:left}
+th,td{border-bottom:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}th.num,td.num{text-align:right}
 ul{padding-left:1.2em}li{margin:.35em 0}.timeline li{margin:.7em 0}.timeline time{font-weight:600}
 .rules h3{margin:1.5em 0 .3em;font-size:var(--fs-h3)}blockquote{margin:.6em 0;padding:.5em 1em;border:1px solid var(--line);background:var(--card);border-radius:8px;box-shadow:var(--shadow)}blockquote p{margin:.4em 0}
 .event{margin:1.2em 0}.event h3{margin:0 0 .3em;font-size:var(--fs-body)}.small{color:var(--muted);font-size:var(--fs-small)}
@@ -58,6 +57,7 @@ ul{padding-left:1.2em}li{margin:.35em 0}.timeline li{margin:.7em 0}.timeline tim
 .more{margin-top:3em;padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:var(--card);box-shadow:var(--shadow)}.more h2{margin:0 0 .4em;border:0;padding:0;font-size:var(--fs-h3)}.more p{margin:0}
 p.detail{margin:0 0 .5em}
 footer{margin-top:2em;color:var(--muted);font-size:var(--fs-caption);border-top:1px solid var(--line);padding-top:1em}
+@media (max-width:600px){:root{--control-h:44px}}
 thead th[aria-sort]{cursor:pointer;user-select:none}thead th[aria-sort]::after{content:"";display:inline-block;width:.9em;color:var(--faint,var(--muted))}thead th[aria-sort="ascending"]::after{content:"\\25B4"}thead th[aria-sort="descending"]::after{content:"\\25BE"}
 """
 
@@ -210,7 +210,7 @@ def diff_table(old_fields, new_fields):
             rows.append(f"<tr><td>{esc(name)}</td><td>{esc(before) or '&mdash;'}</td><td>{esc(after) or '&mdash;'}</td></tr>")
     if not rows:
         return "<p class=\"small\">Only expanded details changed.</p>"
-    return "<table class=\"textcols\"><thead><tr><th>Field</th><th>Before</th><th>After</th></tr></thead><tbody>" + "".join(rows) + "</tbody></table>"
+    return "<table><thead><tr><th>Field</th><th>Before</th><th>After</th></tr></thead><tbody>" + "".join(rows) + "</tbody></table>"
 
 
 def record_table(old, new):
@@ -222,7 +222,7 @@ def record_table(old, new):
         name, _, value = re.sub(r"\s+", " ", line).partition(" ")
         pairs.setdefault(name, ["", ""])[1] = value
     rows = [f"<tr><td>{esc(k)}</td><td>{esc(v[0])}</td><td>{esc(v[1])}</td></tr>" for k, v in pairs.items() if v[0] != v[1]]
-    return "<table class=\"textcols\"><thead><tr><th>Record line</th><th>Before</th><th>After</th></tr></thead><tbody>" + "".join(rows) + "</tbody></table>"
+    return "<table><thead><tr><th>Record line</th><th>Before</th><th>After</th></tr></thead><tbody>" + "".join(rows) + "</tbody></table>"
 
 
 def change_log_html():
